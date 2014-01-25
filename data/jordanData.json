@@ -1,0 +1,896 @@
+[
+  [
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 2,
+          "history_msgs": 5,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 iOS": 0
+          },
+          "subscribe_msgs": 10,
+          "n_user_agents": 2,
+          "publish": 10,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "US.CA.San Francisco": {
+              "lat": 37.7989,
+              "p": 10,
+              "s": 1,
+              "long": -122.39840000000001
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297649": {
+          "n_active_customers": 12,
+          "history_msgs": 4,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 1
+          },
+          "subscribe_msgs": 6,
+          "n_user_agents": 2,
+          "publish": 11,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "Romania": {
+              "lat": 44.32,
+              "p": 0,
+              "s": 71,
+              "long": 23.8
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 11,
+          "history_msgs": 10,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Android;) Gecko/20100101 Firefox/26.0": 5
+          },
+          "subscribe_msgs": 41,
+          "n_user_agents": 2,
+          "publish": 51,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "Slovakia.Pezinok": {
+              "lat": 48.28,
+              "p": 0,
+              "s": 19,
+              "long": 17.27
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 13,
+          "history_msgs": 0,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 0
+          },
+          "subscribe_msgs": 11,
+          "n_user_agents": 21,
+          "publish": 10,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "Canada.Toronto": {
+              "lat": 43.67,
+              "p": 4,
+              "s": 18,
+              "long": -79.42
+            }
+          },
+          "history": 10
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 91,
+          "history_msgs": 10,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Android) Gecko/20100101 Firefox/26.0": 56
+          },
+          "subscribe_msgs": 19,
+          "n_user_agents": 2,
+          "publish": 19,
+          "n_unique_ips": 2,
+          "n_unique_channels": 13,
+          "time": 0,
+          "geo_ip": {
+            "Italy.Mogliano Veneto": {
+              "lat": 45.55,
+              "p": 10,
+              "s": 190,
+              "long": 12.25
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 13,
+          "history_msgs": 30,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 0
+          },
+          "subscribe_msgs": 31,
+          "n_user_agents": 21,
+          "publish": 15,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "India.Maharashtra": {
+              "lat": 20.0,
+              "p": 7,
+              "s": 81,
+              "long": 77.0
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 1,
+          "history_msgs": 0,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 ( PC ) Gecko/20100101 Firefox/26.0": 40
+          },
+          "subscribe_msgs": 1,
+          "n_user_agents": 2,
+          "publish": 1,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "UK.Cheshire East": {
+              "lat": 53.13,
+              "p": 4,
+              "s": 10,
+              "long": -2.37
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 1,
+          "history_msgs": 0,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (iPad) Gecko/20100101 Firefox/26.0": 20
+          },
+          "subscribe_msgs": 1,
+          "n_user_agents": 2,
+          "publish": 1,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "India.Andhra Pradesh": {
+              "lat": 17.38,
+              "p": 3,
+              "s": 13,
+              "long": 78.47
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 1,
+          "history_msgs": 0,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 10
+          },
+          "subscribe_msgs": 1,
+          "n_user_agents": 2,
+          "publish": 1,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "UK.Greater London": {
+              "lat": 51.38,
+              "p": 2,
+              "s": 19,
+              "long": -0.3
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 1,
+          "history_msgs": 0,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (iPad) Gecko/20100101 Firefox/26.0": 30
+          },
+          "subscribe_msgs": 1,
+          "n_user_agents": 2,
+          "publish": 1,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "US.Sierra Vista": {
+              "lat": 31.59,
+              "p": 0,
+              "s": 1,
+              "long": -110.17
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 1,
+          "history_msgs": 0,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 10
+          },
+          "subscribe_msgs": 1,
+          "n_user_agents": 2,
+          "publish": 1,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "France.Lorient": {
+              "lat": 47.75,
+              "p": 12,
+              "s": 133,
+              "long": -3.37
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 1,
+          "history_msgs": 0,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (PC) Gecko/20100101 Firefox/26.0": 0
+          },
+          "subscribe_msgs": 1,
+          "n_user_agents": 2,
+          "publish": 1,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "China.Anhui": {
+              "lat": 31.86,
+              "p": 30,
+              "s": 199,
+              "long": 117.28
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 31,
+          "history_msgs": 10,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Android) Gecko/20100101 Firefox/26.0": 10
+          },
+          "subscribe_msgs": 11,
+          "n_user_agents": 2,
+          "publish": 1,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "France.Saint-Marcel": {
+              "lat": 45.87,
+              "p": 10,
+              "s": 100,
+              "long": 3.88
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 11,
+          "history_msgs": 10,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (PC) Gecko/20100101 Firefox/26.0": 0
+          },
+          "subscribe_msgs": 11,
+          "n_user_agents": 2,
+          "publish": 11,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "US.Natchitoches": {
+              "lat": 31.76,
+              "p": 2,
+              "s": 90,
+              "long": -93.09
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 11,
+          "history_msgs": 10,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 0
+          },
+          "subscribe_msgs": 11,
+          "n_user_agents": 2,
+          "publish": 11,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "US.Natchitoches": {
+              "lat": 31.76,
+              "p": 2,
+              "s": 90,
+              "long": -93.09
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 2,
+          "history_msgs": 0,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (iPhone) Gecko/20100101 Firefox/26.0": 0
+          },
+          "subscribe_msgs": 3,
+          "n_user_agents": 4,
+          "publish": 2,
+          "n_unique_ips": 2,
+          "n_unique_channels": 3,
+          "time": 0,
+          "geo_ip": {
+            "US.CA.San Francisco": {
+              "lat": 37.7989,
+              "p": 2,
+              "s": 3,
+              "long": -122.39840000000001
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297649": {
+          "n_active_customers": 40,
+          "history_msgs": 20,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Android) Gecko/20100101 Firefox/26.0": 30
+          },
+          "subscribe_msgs": 3,
+          "n_user_agents": 4,
+          "publish": 20,
+          "n_unique_ips": 1,
+          "n_unique_channels": 3,
+          "time": 1,
+          "geo_ip": {
+            "Romania": {
+              "lat": 44.32,
+              "p": 2,
+              "s": 5,
+              "long": 23.8
+            }
+          },
+          "history": 3
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 5,
+          "history_msgs": 3,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 2
+          },
+          "subscribe_msgs": 4,
+          "n_user_agents": 3,
+          "publish": 3,
+          "n_unique_ips": 3,
+          "n_unique_channels": 3,
+          "time": 2,
+          "geo_ip": {
+            "Slovakia.Pezinok": {
+              "lat": 48.28,
+              "p": 4,
+              "s": 7,
+              "long": 17.27
+            }
+          },
+          "history": 7
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 2,
+          "history_msgs": 3,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 1
+          },
+          "subscribe_msgs": 5,
+          "n_user_agents": 4,
+          "publish": 3,
+          "n_unique_ips": 4,
+          "n_unique_channels": 3,
+          "time": 4,
+          "geo_ip": {
+            "Canada.Toronto": {
+              "lat": 43.67,
+              "p": 3,
+              "s": 5,
+              "long": -79.42
+            }
+          },
+          "history": 3
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 5,
+          "history_msgs": 7,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 9
+          },
+          "subscribe_msgs": 11,
+          "n_user_agents": 5,
+          "publish": 6,
+          "n_unique_ips": 4,
+          "n_unique_channels": 5,
+          "time": 3,
+          "geo_ip": {
+            "Italy.Mogliano Veneto": {
+              "lat": 45.55,
+              "p": 6,
+              "s": 11,
+              "long": 12.25
+            }
+          },
+          "history": 7
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 2,
+          "history_msgs": 3,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 3
+          },
+          "subscribe_msgs": 12,
+          "n_user_agents": 3,
+          "publish": 7,
+          "n_unique_ips": 4,
+          "n_unique_channels": 3,
+          "time": 2,
+          "geo_ip": {
+            "India.Maharashtra": {
+              "lat": 20,
+              "p": 7,
+              "s": 12,
+              "long": 77
+            }
+          },
+          "history": 3
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 10,
+          "history_msgs": 3,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 7
+          },
+          "subscribe_msgs": 11,
+          "n_user_agents": 2,
+          "publish": 12,
+          "n_unique_ips": 3,
+          "n_unique_channels": 4,
+          "time": 2,
+          "geo_ip": {
+            "UK.Cheshire East": {
+              "lat": 53.13,
+              "p": 12,
+              "s": 11,
+              "long": -2.37
+            }
+          },
+          "history": 3
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 2,
+          "history_msgs": 0,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 0
+          },
+          "subscribe_msgs": 11,
+          "n_user_agents": 3,
+          "publish": 10,
+          "n_unique_ips": 3,
+          "n_unique_channels": 3,
+          "time": 2,
+          "geo_ip": {
+            "India.Andhra Pradesh": {
+              "lat": 17.38,
+              "p": 10,
+              "s": 11,
+              "long": 78.47
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 3,
+          "history_msgs": 4,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 0
+          },
+          "subscribe_msgs": 13,
+          "n_user_agents": 4,
+          "publish": 13,
+          "n_unique_ips": 3,
+          "n_unique_channels": 3,
+          "time": 4,
+          "geo_ip": {
+            "UK.Greater London": {
+              "lat": 51.38,
+              "p": 1300,
+              "s": 13,
+              "long": -0.3
+            }
+          },
+          "history": 4
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 5,
+          "history_msgs": 3,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 1
+          },
+          "subscribe_msgs": 12,
+          "n_user_agents": 4,
+          "publish": 8,
+          "n_unique_ips": 3,
+          "n_unique_channels": 4,
+          "time": 5,
+          "geo_ip": {
+            "US.Sierra Vista": {
+              "lat": 31.59,
+              "p": 8,
+              "s": 12,
+              "long": -110.17
+            }
+          },
+          "history": 3
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 1,
+          "history_msgs": 0,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 1
+          },
+          "subscribe_msgs": 1,
+          "n_user_agents": 2,
+          "publish": 1,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "Pakistan.Lahore": {
+              "lat": 31.55,
+              "p": 0,
+              "s": 1,
+              "long": 74.34
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 1,
+          "history_msgs": 0,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 1
+          },
+          "subscribe_msgs": 1,
+          "n_user_agents": 2,
+          "publish": 1,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "South Africa.Cape Town 8000": {
+              "lat": -33.93,
+              "p": 0,
+              "s": 1,
+              "long": 18.42
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 1,
+          "history_msgs": 0,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 0
+          },
+          "subscribe_msgs": 1,
+          "n_user_agents": 2,
+          "publish": 1,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "Thailand.Tambon Ban Tai, Chang Wat Kanchanaburi 7100": {
+              "lat": 14,
+              "p": 0,
+              "s": 1,
+              "long": 99.55
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 1,
+          "history_msgs": 0,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 1
+          },
+          "subscribe_msgs": 1,
+          "n_user_agents": 2,
+          "publish": 1,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "China.Chancheng": {
+              "lat": 23.03,
+              "p": 0,
+              "s": 1,
+              "long": 113.13
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 1,
+          "history_msgs": 0,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 0
+          },
+          "subscribe_msgs": 1,
+          "n_user_agents": 2,
+          "publish": 1,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "US.CA": {
+              "lat": 34.2,
+              "p": 0,
+              "s": 1,
+              "long": -118.54
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 1,
+          "history_msgs": 10,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 0
+          },
+          "subscribe_msgs": 1,
+          "n_user_agents": 2,
+          "publish": 1,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "Slovakia.Trnava": {
+              "lat": 48.37,
+              "p": 0,
+              "s": 1,
+              "long": 17.6
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 1,
+          "history_msgs": 9,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel iOS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 100
+          },
+          "subscribe_msgs": 1,
+          "n_user_agents": 2,
+          "publish": 1,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "Romania.Ploiești": {
+              "lat": 44.95,
+              "p": 100,
+              "s": 1,
+              "long": 26.02
+            }
+          },
+          "history": 0
+        }
+      }
+    },
+    {
+      "jordan-devbuild": {
+        "1389297648": {
+          "n_active_customers": 1,
+          "history_msgs": 5,
+          "unique_user_agents": {
+            "Python-urllib/2.7": 0,
+            "Mozilla/5.0 (Macintosh; Intel Android X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0": 0
+          },
+          "subscribe_msgs": 1,
+          "n_user_agents": 2,
+          "publish": 1,
+          "n_unique_ips": 2,
+          "n_unique_channels": 1,
+          "time": 0,
+          "geo_ip": {
+            "US.Dallas, TX": {
+              "lat": 32.75,
+              "p": 0,
+              "s": 1,
+              "long": -96.76
+            }
+          },
+          "history": 0
+        }
+      }
+    }
+  ],
+  "13892976499490044"
+]

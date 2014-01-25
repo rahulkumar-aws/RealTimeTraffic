@@ -1,0 +1,230 @@
+[
+  {
+    "name": "North America",
+    "children": [
+      {
+        "name": "USA",
+        "children": [
+          {
+            "name": "San Francisco",
+            "children": [
+              {
+                "name": "Channel-1",
+                "children": [
+                  {
+                    "name": "100-1000",
+                    "colour": "#2e8b90"
+                  }
+                ]
+              },
+              {
+                "name": "Channel-2",
+                "children": [
+                  {
+                    "name": "10-100",
+                    "colour": "#f0e2a3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Calefornia",
+            "children": [
+              {
+                "name": "Channel-3",
+                "children": [
+                  {
+                    "name": "1000-10000",
+                    "colour": "#ffa500"
+                  }
+                ]
+              },
+              {
+                "name": "Channel-4",
+                "children": [
+                  {
+                    "name": ">10000",
+                    "colour": "#4169e1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "New York",
+            "children": [
+              {
+                "name": "Channel-5",
+                "children": [
+                  {
+                    "name": "1-10",
+                    "colour": "#d5dda1"
+                  }
+                ]
+              },
+              {
+                "name": "Channel-6",
+                "children": [
+                  {
+                    "name": "10-100",
+                    "colour": "#aec1ad"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Canada",
+        "children": [
+          {
+            "name": "Ontario",
+            "children": [
+              {
+                "name": "Channel-7",
+                "children": [
+                  {
+                    "name": "10-100",
+                    "colour": "#b49a3d"
+                  }
+                ]
+              },
+              {
+                "name": "Channel-8",
+                "children": [
+                  {
+                    "name": "1000-10000",
+                    "colour": "#a97d32"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Alberta",
+            "children": [
+              {
+                "name": "Channel-9",
+                "children": [
+                  {
+                    "name": "100-1000",
+                    "colour": "#d6a680"
+                  }
+                ]
+              },
+              {
+                "name": "Channel-10",
+                "children": [
+                  {
+                    "name": "10-100",
+                    "colour": "#a2765d"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Manitoba",
+            "children": [
+              {
+                "name": "Channel-11",
+                "children": [
+                  {
+                    "name": "10-1000",
+                    "colour": "#b9763f"
+                  }
+                ]
+              },
+              {
+                "name": "Channel-12",
+                "children": [
+                  {
+                    "name": ">10000",
+                    "colour": "#458e45"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mexico",
+        "children": [
+          {
+            "name": "Sonora",
+            "children": [
+              {
+                "name": "Channel-13",
+                "children": [
+                  {
+                    "name": "<10",
+                    "colour": "#72659d"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Asia",
+    "children": [
+      {
+        "name": "India",
+        "children": [
+          {
+            "name": "Ch-ind-1",
+            "children": [
+              {
+                "name": ">10000",
+                "colour": "#aaa1cc"
+              }
+            ]
+          },
+          {
+            "name": "Ch-ind-2",
+            "children": [
+              {
+                "name": "100-1000",
+                "colour": "#e098b0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Japan",
+        "children": [
+          {
+            "name": "Ch-jpn-1",
+            "children": [
+              {
+                "name": "100-1000",
+                "colour": "#ef91ac"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Singapor",
+        "children": [
+          {
+            "name": "ch-sng-1",
+            "children": [
+              {
+                "name": "10-100",
+                "colour": "#f6d5aa"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

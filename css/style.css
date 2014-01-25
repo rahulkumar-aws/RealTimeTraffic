@@ -1,0 +1,205 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #F6F6F6;
+}
+
+.panel-primary {
+    border-color: #db0020;
+
+}
+
+.panel-primary > .panel-heading {
+
+    background: linear-gradient(#db0020, #ae021c);
+    border-color: #db0020;
+}
+
+.panel-title {
+    font-size: 13px;
+}
+
+.panel {
+
+    margin-bottom: 7px;
+}
+
+.panel-body {
+    padding: 1px;
+}
+
+.panel-footer {
+    padding: 2px 25px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #dddddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.cust-thumbnail {
+    display: block;
+    padding: 3px;
+    margin-bottom: 8px;
+    margin-right: 2px;
+    line-height: 1.428571429;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.info-row {
+    display: block;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    background: rgb(76, 76, 76); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(76, 76, 76, 1) 0%, rgba(89, 89, 89, 1) 12%, rgba(102, 102, 102, 1) 25%, rgba(71, 71, 71, 1) 39%, rgba(44, 44, 44, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(17, 17, 17, 1) 60%, rgba(43, 43, 43, 1) 76%, rgba(28, 28, 28, 1) 91%, rgba(19, 19, 19, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(76, 76, 76, 1)), color-stop(12%, rgba(89, 89, 89, 1)), color-stop(25%, rgba(102, 102, 102, 1)), color-stop(39%, rgba(71, 71, 71, 1)), color-stop(50%, rgba(44, 44, 44, 1)), color-stop(51%, rgba(0, 0, 0, 1)), color-stop(60%, rgba(17, 17, 17, 1)), color-stop(76%, rgba(43, 43, 43, 1)), color-stop(91%, rgba(28, 28, 28, 1)), color-stop(100%, rgba(19, 19, 19, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(76, 76, 76, 1) 0%, rgba(89, 89, 89, 1) 12%, rgba(102, 102, 102, 1) 25%, rgba(71, 71, 71, 1) 39%, rgba(44, 44, 44, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(17, 17, 17, 1) 60%, rgba(43, 43, 43, 1) 76%, rgba(28, 28, 28, 1) 91%, rgba(19, 19, 19, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(76, 76, 76, 1) 0%, rgba(89, 89, 89, 1) 12%, rgba(102, 102, 102, 1) 25%, rgba(71, 71, 71, 1) 39%, rgba(44, 44, 44, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(17, 17, 17, 1) 60%, rgba(43, 43, 43, 1) 76%, rgba(28, 28, 28, 1) 91%, rgba(19, 19, 19, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(76, 76, 76, 1) 0%, rgba(89, 89, 89, 1) 12%, rgba(102, 102, 102, 1) 25%, rgba(71, 71, 71, 1) 39%, rgba(44, 44, 44, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(17, 17, 17, 1) 60%, rgba(43, 43, 43, 1) 76%, rgba(28, 28, 28, 1) 91%, rgba(19, 19, 19, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(76, 76, 76, 1) 0%, rgba(89, 89, 89, 1) 12%, rgba(102, 102, 102, 1) 25%, rgba(71, 71, 71, 1) 39%, rgba(44, 44, 44, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(17, 17, 17, 1) 60%, rgba(43, 43, 43, 1) 76%, rgba(28, 28, 28, 1) 91%, rgba(19, 19, 19, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0); /* IE6-9 */
+
+}
+
+.info-panel {
+    display: block;
+    padding: 0px 2px 0px 2px;
+    margin: 2px;
+    height: 40px;
+    text-align: center;
+    line-height: 1.428571429;
+
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    background: rgb(255, 255, 255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 50%, rgba(225, 225, 225, 1) 51%, rgba(246, 246, 246, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(50%, rgba(241, 241, 241, 1)), color-stop(51%, rgba(225, 225, 225, 1)), color-stop(100%, rgba(246, 246, 246, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 50%, rgba(225, 225, 225, 1) 51%, rgba(246, 246, 246, 1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 50%, rgba(225, 225, 225, 1) 51%, rgba(246, 246, 246, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 50%, rgba(225, 225, 225, 1) 51%, rgba(246, 246, 246, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 50%, rgba(225, 225, 225, 1) 51%, rgba(246, 246, 246, 1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0); /* IE6-9 */
+
+}
+
+.info-panel h3,
+.info-panel h4,
+.info-panel h5,
+.info-panel h6 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* .info-panel h5{
+	
+	font-size: 0.75em; 
+} */
+
+#message-stats-panel {
+    padding: 1.5px;
+
+}
+
+#device-stats-panel {
+    padding: 1.5px;
+
+}
+
+.panel-heading {
+
+    padding: 5px 5px;
+}
+
+.thumbnail {
+    height: 220px;
+    margin-bottom: 5px;
+}
+
+.bar rect {
+    fill: steelblue;
+}
+
+.bar text.value {
+    fill: white;
+}
+
+.axis {
+    shape-rendering: crispEdges;
+}
+
+.axis path {
+    fill: none;
+}
+
+.x.axis line {
+    stroke: #fff;
+    stroke-opacity: 0;
+}
+
+.y.axis path {
+    stroke: black;
+}
+
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: brown;
+}
+
+.axis {
+    font: 10px sans-serif;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.area {
+    fill: steelblue;
+}
+
+.stroke {
+    fill: none;
+    stroke: #000;
+    stroke-width: 3px;
+}
+
+.fill {
+    fill: #fff;
+}
+
+div.tooltip div.toptooltip {
+    position: absolute;
+    text-align: center;
+    height: 28px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+canvas {
+    max-width: 100%;
+    width: 768px;
+
+    height: auto;
+}

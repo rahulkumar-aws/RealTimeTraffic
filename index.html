@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PubNub RealTime Visualization</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./assets/ico/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="./css/worldmap.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+    <div id="main-container" class="container"
+		data-bind="with:currentdashboard">
+
+		<div id="world-map-row" class="row">
+			<!-- world map row start -->
+			<div class="col-xs-12 col-sm-12 col-md-12">
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<span> World Map View</span>
+						</h3>
+					</div>
+					<div id="world-map-panel" class="panel-body">
+						<div id="map-wrapper">
+                            <div><button id="zoomIn">+</button><button id="resetBtn">Reset</button><button id="zoomOut">-</button></div>
+							<svg id="map-container" viewbox="0 0 1000 400"> </svg>
+						</div>
+					</div>
+					 <div class="panel-footer"><center>Displaying less than .01% of real-time traffic</center></div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- world map container End -->
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">Message Data</h3>
+			</div>
+			<div id="message-stats-panel" class="panel-body">
+				<div id="message-data-row">
+					<!--  Message data row start -->
+					<div id="message-data-info-row" class="row info-row">
+						<div class="col-xs-12 col-sm-12 col-md-12">
+
+							<div class="col-xs-12 col-md-2 col-sm-4">
+								<div class="info-panel">
+									<h5>Channels</h5>
+									<h5>
+										<span id="total-channel" data-bind="text:currentdashboard.worldMapVM.total_n_unique_channels"></span>
+									</h5>
+								</div>
+							</div>
+
+
+							<div class="col-xs-12 col-md-2 col-sm-4">
+								<div class="info-panel">
+									<h5>Users</h5>
+									<h5>
+										<span id="total-users" data-bind="text:currentdashboard.worldMapVM.total_users"></span>
+									</h5>
+								</div>
+							</div>
+
+							<div class="col-xs-12 col-md-2 col-sm-4">
+								<div class="info-panel">
+									<h5>Publishes/Sec</h5>
+									<h5>
+										<span id="total-pubs" data-bind="text:currentdashboard.worldMapVM.totalPubMessage"></span>
+									</h5>
+								</div>
+							</div>
+
+							<div class="col-xs-12 col-md-2 col-sm-4">
+								<div class="info-panel">
+									<h5>Subscribes/Sec</h5>
+									<h5>
+										<span id="total-subs" data-bind="text:currentdashboard.worldMapVM.totalSubMessage"></span>
+									</h5>
+								</div>
+							</div>
+
+							<div class="col-xs-12 col-md-2 col-sm-4">
+								<div class="info-panel">
+									<h5>Messages</h5>
+									<h5>
+										<span id="total-messaged" data-bind="text:currentdashboard.worldMapVM.total_message"></span>
+									</h5>
+								</div>
+							</div>
+
+							<div class="col-xs-12 col-md-2 col-sm-4">
+								<div class="info-panel">
+									<h5>History Request</h5>
+									<h5>
+										<span id="total-history" data-bind="text:currentdashboard.worldMapVM.total_history_msgs"></span>
+									</h5>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+
+
+				<div id="message-data-chart-row">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="panel panel-primary">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<span
+											data-bind="text:currentdashboard.messageDataVM.topChannelsViewTitle"></span>
+									</h4>
+								</div>
+								<div class="panel-body">
+									<div id="top-ten-channel-by-message-div" class="thumbnail"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+
+							<div class="panel panel-primary">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<span
+											data-bind="text:currentdashboard.messageDataVM.trafficViewTitle"></span>
+									</h4>
+								</div>
+								<div class="panel-body">
+								    <canvas id="message-traffic-chart"  class="thumbnail"></canvas>
+								</div>
+							</div>
+
+
+
+
+
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+
+							<div class="panel panel-primary">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<span
+											data-bind="text:currentdashboard.messageDataVM.topReasonViewTitle"></span>
+									</h4>
+								</div>
+								<div class="panel-body">
+									<div id="top-ten-countries-message-div" class="thumbnail"></div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+		<!--  Message data row End -->
+
+		<!-- User and device Data row start -->
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">User & Device Data</h3>
+			</div>
+			<div id="device-stats-panel" class="panel-body">
+				<div id="user-device-data-row">
+					<!--  Message data row start -->
+					<div id="user-device-data-info-row" class="row info-row">
+						<div class="col-xs-12 col-sm-12 col-md-12">
+
+							<div class="col-xs-12 col-md-2 col-sm-4">
+								<div class="info-panel">
+									<h5>Channels</h5>
+									<h5>
+										<span>4532</span>
+									</h5>
+								</div>
+							</div>
+
+							<div class="col-xs-12 col-md-2 col-sm-4">
+								<div class="info-panel">
+									<h5>Users/Devices</h5>
+									<h5>
+										<span>240034</span>
+									</h5>
+								</div>
+							</div>
+
+							<div class="col-xs-12 col-md-2 col-sm-4">
+								<div class="info-panel">
+									<h5>Publishes/Sec</h5>
+									<h5>
+										<span id="total-pubs">450</span>
+									</h5>
+								</div>
+							</div>
+
+							<div class="col-xs-12 col-md-2 col-sm-4">
+								<div class="info-panel">
+									<h5>Subscribes/Sec</h5>
+									<h5>
+										<span id="total-subs">6000</span>
+									</h5>
+								</div>
+							</div>
+
+							<div class="col-xs-12 col-md-2 col-sm-4">
+								<div class="info-panel">
+									<h5>Messages(5 Min)</h5>
+									<h5>
+										<span>65000</span>
+									</h5>
+								</div>
+							</div>
+
+							<div class="col-xs-12 col-md-2 col-sm-4">
+								<div class="info-panel">
+									<h5>History Request</h5>
+									<h5>
+										<span>560</span>
+									</h5>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div id="user-device-data-chart-row">
+
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-4">
+
+							<div class="panel panel-primary">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<span
+											data-bind="text:currentdashboard.deviceDataVM.topChannelsViewTitle"></span>
+									</h4>
+								</div>
+								<div class="panel-body">
+									<div id="top-ten-channel-by-device-div" class="thumbnail"></div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+
+							<div class="panel panel-primary">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<span
+											data-bind="text:currentdashboard.deviceDataVM.deviceTypeViewTitle"></span>
+									</h4>
+								</div>
+								<div class="panel-body">
+									<div id="pie-chart" class="thumbnail"></div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+
+							<div class="panel panel-primary">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<span
+											data-bind="text:currentdashboard.deviceDataVM.topReasonViewTitle"></span>
+									</h4>
+								</div>
+								<div class="panel-body">
+									<div id="top-ten-countries-device-div" class="thumbnail"></div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+		<!-- FilterBar code Start-->
+
+	<!-- <div class="viewport">
+      <div class="frame">
+        <div class="menu nav-collapse collapse width"></div>
+        <div class="view">HI</div>
+      </div>
+    </div> -->
+
+
+	<!-- 	<div id="filterbar-div" style="">
+		<div>
+		<div>Device Type</div>
+		<ul>
+			<li><input type="checkbox"/>Android </li>
+			<li><input type="checkbox"/>Android Tab </li>
+			<li><input type="checkbox"/>iPad </li>
+			<li><input type="checkbox"/>iPhone </li>
+			<li><input type="checkbox"/>Mac </li>
+			<li><input type="checkbox"/>PC</li>
+		</ul>
+		<div>Data Type</div>
+		<ul>
+			<li><input type="checkbox"/>Publish </li>
+			<li><input type="checkbox"/>Subscrib</li>
+			<li><input type="checkbox"/>History</li>
+			<li><input type="checkbox"/>Presence</li>
+			<li><input type="checkbox"/>Storage & Playback</li>
+		</ul>
+
+
+
+
+
+		</div>
+		</div> -->
+
+		<!-- FilterBar code end -->
+	</div>
+
+    <script type="text/javascript" src="./js/lib/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="./js/lib/jquery.fittext.js"></script>
+	<script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="./js/lib/d3.v3.js"></script>
+	<script type="text/javascript" src="./js/lib/topojson.js"></script>
+	<script type="text/javascript" src="./js/lib/queue.js"></script>
+	<script type="text/javascript" src="./js/lib/knockout-3.0.0.debug.js"></script>
+	<script type="text/javascript" src="./js/lib/underscore.js"></script>
+	<script type="text/javascript" src="./js/lib/pubnub.js"></script>
+	<script type="text/javascript" src="./js/lib/smoothie.js"></script>
+    <script type="text/javascript" src="./js/vm/pubnub.worldmap.js"></script>
+	<script type="text/javascript" src="./js/vm/pubnub.messagedata.js"></script>
+	<script type="text/javascript" src="./js/vm/pubnub.devicedata.js"></script>
+	<script type="text/javascript" src="./js/vm/pubnub.dashboard.js"></script>
+
+    <script type="text/javascript">
+		/* $(".info-panel h5").fitText(1);
+		$(".info-panel h4").fitText(0.75); */
+		var currentdashboard = new DasboardVM();
+		ko.applyBindings(currentdashboard);
+		currentdashboard.worldMapVM.plotWorldMap();
+		//currentdashboard.worldMapVM.renderLoop();
+		//currentdashboard.deviceDataVM.plotPieChart();
+		currentdashboard.deviceDataVM.plotTopTenChannelByDeviceChart();
+		//currentdashboard.deviceDataVM.plotTopCountriesByDeviceChart();
+		//currentdashboard.messageDataVM.plotNetworkTrafficChart();
+		currentdashboard.messageDataVM.plotTopTenChannelChart();
+		//currentdashboard.worldMapVM.plotTopCountriesTotalMsgVolumeChart();
+	</script>
+
+</body>
+</html>

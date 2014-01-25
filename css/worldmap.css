@@ -1,0 +1,64 @@
+svg {
+    max-height: 100%;
+}
+
+.stroke {
+    fill: none;
+    stroke: #000;
+    stroke-width: 3px;
+}
+
+.fill {
+    fill: #fff;
+}
+
+.graticule {
+    fill: none;
+    stroke: #777;
+    stroke-width: .5px;
+    stroke-opacity: .5;
+}
+
+.land {
+    fill: #222;
+}
+
+.boundary {
+    fill: none;
+    stroke: #fff;
+    stroke-width: .1px;
+}
+
+div.worldmaptooltip {
+    position: absolute;
+    text-align: center;
+    font: 12px sans-serif;
+    color: #fffeec;
+    background: #de0065;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#countries .active, #states .active {
+    fill: #89a;
+}
+
+#cities {
+    stroke-width: 0;
+}
+
+.city {
+    fill: #345;
+    stroke: #fff;
+}
+
+pre.prettyprint {
+    border: 1px solid #ccc;
+    margin-bottom: 0;
+    padding: 9.5px;
+}

@@ -1,0 +1,230 @@
+[
+  {
+    "name": "North America",
+    "children": [
+      {
+        "name": "USA",
+        "children": [
+          {
+            "name": "San Francisco",
+            "children": [
+              {
+                "name": "100-1000",
+                "children": [
+                  {
+                    "name": "iPad",
+                    "colour": "#2e8b57"
+                  }
+                ]
+              },
+              {
+                "name": "10-100",
+                "children": [
+                  {
+                    "name": "Android",
+                    "colour": "#f0e2a3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "San Jose",
+            "children": [
+              {
+                "name": "1000-10000",
+                "children": [
+                  {
+                    "name": "PC",
+                    "colour": "#ffa500"
+                  }
+                ]
+              },
+              {
+                "name": ">10000",
+                "children": [
+                  {
+                    "name": "iPhone",
+                    "colour": "#4169e1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "New York",
+            "children": [
+              {
+                "name": "1-10",
+                "children": [
+                  {
+                    "name": "Mac",
+                    "colour": "#d5dda1"
+                  }
+                ]
+              },
+              {
+                "name": "10-100",
+                "children": [
+                  {
+                    "name": "Android Tab",
+                    "colour": "#aec1ad"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Canada",
+        "children": [
+          {
+            "name": "Ontario",
+            "children": [
+              {
+                "name": "10-100",
+                "children": [
+                  {
+                    "name": "Android",
+                    "colour": "#b49a3d"
+                  }
+                ]
+              },
+              {
+                "name": "1000-10000",
+                "children": [
+                  {
+                    "name": "iOs",
+                    "colour": "#a97d32"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Alberta",
+            "children": [
+              {
+                "name": "100-1000",
+                "children": [
+                  {
+                    "name": "Mac",
+                    "colour": "#d6a680"
+                  }
+                ]
+              },
+              {
+                "name": "10-100",
+                "children": [
+                  {
+                    "name": "PC",
+                    "colour": "#a2765d"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Manitoba",
+            "children": [
+              {
+                "name": "10-1000",
+                "children": [
+                  {
+                    "name": "Android Tab",
+                    "colour": "#b9763f"
+                  }
+                ]
+              },
+              {
+                "name": ">10000",
+                "children": [
+                  {
+                    "name": "iPhone",
+                    "colour": "#af643c"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mexico",
+        "children": [
+          {
+            "name": "Sonora",
+            "children": [
+              {
+                "name": ">10000",
+                "children": [
+                  {
+                    "name": "iPad",
+                    "colour": "#72659d"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Asia",
+    "children": [
+      {
+        "name": "India",
+        "children": [
+          {
+            "name": ">10000",
+            "children": [
+              {
+                "name": "Android",
+                "colour": "#aaa1cc"
+              }
+            ]
+          },
+          {
+            "name": "10-100",
+            "children": [
+              {
+                "name": "PC",
+                "colour": "#e098b0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Japan",
+        "children": [
+          {
+            "name": "100-1000",
+            "children": [
+              {
+                "name": "Mac",
+                "colour": "#ef91ac"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Singapor",
+        "children": [
+          {
+            "name": "10-100",
+            "children": [
+              {
+                "name": "Android",
+                "colour": "#f6d5aa"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

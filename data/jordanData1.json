@@ -1,0 +1,3441 @@
+[[{
+	"top_customers": {
+		"1390545558": {
+			"demo": {
+				"p": 4,
+				"s": 0
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 0,
+				"s": 2
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390545557": {
+			"demo": {
+				"p": 11,
+				"s": 1161
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 2,
+				"s": 0
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390545556": {
+			"demo": {
+				"p": 0,
+				"s": 100
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390545557": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 2,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 1161,
+			"n_user_agents": 3,
+			"publish": 13,
+			"n_unique_ips": 8,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 1,
+					"s": 0,
+					"long": -121.8949966430664
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390545556": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 100,
+			"n_user_agents": 1,
+			"publish": 0,
+			"n_unique_ips": 1,
+			"n_unique_channels": 1,
+			"time": 0,
+			"geo_ip": {
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 0,
+					"s": 1,
+					"long": -121.8949966430664
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390545558": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 2,
+			"n_user_agents": 2,
+			"publish": 4,
+			"n_unique_ips": 5,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 1,
+					"s": 0,
+					"long": 5.75
+				},
+				"IN.07.New Delhi": {
+					"lat": 28.600000381469727,
+					"p": 0,
+					"s": 1,
+					"long": 77.19999694824219
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390545559": {
+			"demo": {
+				"p": 0,
+				"s": 233
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390545558": {
+			"demo": {
+				"p": 10,
+				"s": 932
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 5,
+				"s": 5
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390545559": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 233,
+			"n_user_agents": 1,
+			"publish": 0,
+			"n_unique_ips": 3,
+			"n_unique_channels": 2,
+			"time": 0,
+			"geo_ip": {
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390545558": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 937,
+			"n_user_agents": 3,
+			"publish": 15,
+			"n_unique_ips": 8,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 1,
+					"s": 0,
+					"long": -121.8949966430664
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390545559": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 1037,
+			"n_user_agents": 3,
+			"publish": 15,
+			"n_unique_ips": 8,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 0,
+					"s": 1,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390545559": {
+			"demo": {
+				"p": 12,
+				"s": 1034
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390545561": {
+			"demo": {
+				"p": 2,
+				"s": 200
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390545560": {
+			"demo": {
+				"p": 14,
+				"s": 1171
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 2,
+				"s": 2
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390545560": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 1173,
+			"n_user_agents": 3,
+			"publish": 16,
+			"n_unique_ips": 8,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 1,
+					"s": 0,
+					"long": -121.8949966430664
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390545561": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 200,
+			"n_user_agents": 1,
+			"publish": 2,
+			"n_unique_ips": 4,
+			"n_unique_channels": 1,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546001": {
+			"demo": {
+				"p": 6,
+				"s": 500
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546002": {
+			"demo": {
+				"p": 3,
+				"s": 200
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546001": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 503,
+			"n_user_agents": 3,
+			"publish": 9,
+			"n_unique_ips": 7,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 2,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 2,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546002": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 200,
+			"n_user_agents": 1,
+			"publish": 3,
+			"n_unique_ips": 5,
+			"n_unique_channels": 2,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546002": {
+			"demo": {
+				"p": 5,
+				"s": 500
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546003": {
+			"demo": {
+				"p": 3,
+				"s": 400
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 0,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546002": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 503,
+			"n_user_agents": 3,
+			"publish": 8,
+			"n_unique_ips": 7,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546003": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 403,
+			"n_user_agents": 2,
+			"publish": 3,
+			"n_unique_ips": 6,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546003": {
+			"demo": {
+				"p": 5,
+				"s": 400
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 0
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546003": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1
+			},
+			"subscribe_msgs": 400,
+			"n_user_agents": 2,
+			"publish": 8,
+			"n_unique_ips": 6,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546004": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 403,
+			"n_user_agents": 2,
+			"publish": 2,
+			"n_unique_ips": 6,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 1,
+					"s": 0,
+					"long": 5.75
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546004": {
+			"demo": {
+				"p": 2,
+				"s": 400
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 0,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546004": {
+			"demo": {
+				"p": 5,
+				"s": 500
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 1
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546005": {
+			"demo": {
+				"p": 4,
+				"s": 100
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546004": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 501,
+			"n_user_agents": 3,
+			"publish": 8,
+			"n_unique_ips": 7,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546005": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 100,
+			"n_user_agents": 1,
+			"publish": 4,
+			"n_unique_ips": 4,
+			"n_unique_channels": 2,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 0,
+					"s": 1,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546005": {
+			"demo": {
+				"p": 6,
+				"s": 600
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 2
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546006": {
+			"demo": {
+				"p": 4,
+				"s": 400
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546005": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 602,
+			"n_user_agents": 3,
+			"publish": 9,
+			"n_unique_ips": 7,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546006": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 400,
+			"n_user_agents": 1,
+			"publish": 4,
+			"n_unique_ips": 5,
+			"n_unique_channels": 2,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546006": {
+			"demo": {
+				"p": 2,
+				"s": 500
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546007": {
+			"demo": {
+				"p": 4,
+				"s": 200
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546006": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 503,
+			"n_user_agents": 3,
+			"publish": 5,
+			"n_unique_ips": 7,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 0,
+					"s": 1,
+					"long": -74.29149627685547
+				}
+			},
+			"history": 0
+		},
+		"1390546007": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 200,
+			"n_user_agents": 1,
+			"publish": 4,
+			"n_unique_ips": 5,
+			"n_unique_channels": 2,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 0,
+					"s": 1,
+					"long": -74.29149627685547
+				},
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 1,
+					"s": 0,
+					"long": 5.75
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546008": {
+			"demo": {
+				"p": 2,
+				"s": 200
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 0,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546007": {
+			"demo": {
+				"p": 5,
+				"s": 500
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546008": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 203,
+			"n_user_agents": 2,
+			"publish": 2,
+			"n_unique_ips": 5,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 0,
+					"s": 1,
+					"long": 5.75
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546007": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 503,
+			"n_user_agents": 3,
+			"publish": 8,
+			"n_unique_ips": 7,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546008": {
+			"demo": {
+				"p": 5,
+				"s": 500
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 0
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546009": {
+			"demo": {
+				"p": 4,
+				"s": 400
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 0,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546008": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1
+			},
+			"subscribe_msgs": 500,
+			"n_user_agents": 2,
+			"publish": 8,
+			"n_unique_ips": 6,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546009": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 403,
+			"n_user_agents": 2,
+			"publish": 4,
+			"n_unique_ips": 6,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546010": {
+			"demo": {
+				"p": 3,
+				"s": 100
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546009": {
+			"demo": {
+				"p": 2,
+				"s": 400
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 1
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546009": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 401,
+			"n_user_agents": 3,
+			"publish": 5,
+			"n_unique_ips": 6,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 0,
+					"s": 1,
+					"long": 5.75
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546010": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 100,
+			"n_user_agents": 1,
+			"publish": 3,
+			"n_unique_ips": 4,
+			"n_unique_channels": 2,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546010": {
+			"demo": {
+				"p": 3,
+				"s": 300
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 2
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546011": {
+			"demo": {
+				"p": 1,
+				"s": 300
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546011": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 300,
+			"n_user_agents": 1,
+			"publish": 1,
+			"n_unique_ips": 4,
+			"n_unique_channels": 2,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546010": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 302,
+			"n_user_agents": 3,
+			"publish": 6,
+			"n_unique_ips": 6,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546012": {
+			"demo": {
+				"p": 3,
+				"s": 400
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 0,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546012": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 403,
+			"n_user_agents": 2,
+			"publish": 3,
+			"n_unique_ips": 5,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546011": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 403,
+			"n_user_agents": 3,
+			"publish": 7,
+			"n_unique_ips": 6,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546011": {
+			"demo": {
+				"p": 4,
+				"s": 400
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546013": {
+			"demo": {
+				"p": 1,
+				"s": 300
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 0,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546012": {
+			"demo": {
+				"p": 4,
+				"s": 100
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 0
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546013": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 303,
+			"n_user_agents": 2,
+			"publish": 1,
+			"n_unique_ips": 5,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 0,
+					"s": 1,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546012": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1
+			},
+			"subscribe_msgs": 100,
+			"n_user_agents": 2,
+			"publish": 7,
+			"n_unique_ips": 5,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 1,
+					"s": 0,
+					"long": 5.75
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546014": {
+			"demo": {
+				"p": 2,
+				"s": 100
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 0,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546013": {
+			"demo": {
+				"p": 4,
+				"s": 300
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 0
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546014": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 103,
+			"n_user_agents": 2,
+			"publish": 2,
+			"n_unique_ips": 4,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 1,
+					"s": 0,
+					"long": 5.75
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546013": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1
+			},
+			"subscribe_msgs": 300,
+			"n_user_agents": 2,
+			"publish": 7,
+			"n_unique_ips": 5,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546015": {
+			"demo": {
+				"p": 1,
+				"s": 400
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 0,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546014": {
+			"demo": {
+				"p": 4,
+				"s": 400
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 0
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546015": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 403,
+			"n_user_agents": 2,
+			"publish": 1,
+			"n_unique_ips": 5,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 0,
+					"s": 1,
+					"long": 5.75
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546014": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1
+			},
+			"subscribe_msgs": 400,
+			"n_user_agents": 2,
+			"publish": 7,
+			"n_unique_ips": 5,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546016": {
+			"demo": {
+				"p": 3,
+				"s": 200
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546015": {
+			"demo": {
+				"p": 4,
+				"s": 200
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 1
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546016": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 200,
+			"n_user_agents": 1,
+			"publish": 3,
+			"n_unique_ips": 4,
+			"n_unique_channels": 2,
+			"time": 0,
+			"geo_ip": {
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546015": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 201,
+			"n_user_agents": 3,
+			"publish": 7,
+			"n_unique_ips": 6,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546017": {
+			"demo": {
+				"p": 3,
+				"s": 100
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546016": {
+			"demo": {
+				"p": 1,
+				"s": 300
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 2
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546017": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 100,
+			"n_user_agents": 1,
+			"publish": 3,
+			"n_unique_ips": 4,
+			"n_unique_channels": 2,
+			"time": 0,
+			"geo_ip": {
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546016": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 302,
+			"n_user_agents": 3,
+			"publish": 4,
+			"n_unique_ips": 6,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 0,
+					"s": 1,
+					"long": 5.75
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546017": {
+			"demo": {
+				"p": 4,
+				"s": 300
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546018": {
+			"demo": {
+				"p": 4,
+				"s": 400
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 0,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546017": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 303,
+			"n_user_agents": 3,
+			"publish": 7,
+			"n_unique_ips": 6,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 0,
+					"s": 1,
+					"long": 5.75
+				},
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				}
+			},
+			"history": 0
+		},
+		"1390546018": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 403,
+			"n_user_agents": 2,
+			"publish": 4,
+			"n_unique_ips": 5,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"IN.07.New Delhi": {
+					"lat": 28.600000381469727,
+					"p": 0,
+					"s": 1,
+					"long": 77.19999694824219
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546018": {
+			"demo": {
+				"p": 0,
+				"s": 400
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 0
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546019": {
+			"demo": {
+				"p": 4,
+				"s": 100
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 0,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546019": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 103,
+			"n_user_agents": 2,
+			"publish": 4,
+			"n_unique_ips": 5,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546018": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1
+			},
+			"subscribe_msgs": 400,
+			"n_user_agents": 2,
+			"publish": 3,
+			"n_unique_ips": 5,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546020": {
+			"demo": {
+				"p": 2,
+				"s": 200
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 0,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546019": {
+			"demo": {
+				"p": 3,
+				"s": 400
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 0
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546020": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 203,
+			"n_user_agents": 2,
+			"publish": 2,
+			"n_unique_ips": 5,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"IN.07.New Delhi": {
+					"lat": 28.600000381469727,
+					"p": 0,
+					"s": 1,
+					"long": 77.19999694824219
+				}
+			},
+			"history": 0
+		},
+		"1390546019": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1
+			},
+			"subscribe_msgs": 400,
+			"n_user_agents": 2,
+			"publish": 6,
+			"n_unique_ips": 5,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 0,
+					"s": 1,
+					"long": 5.75
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546020": {
+			"demo": {
+				"p": 3,
+				"s": 400
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 1
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546021": {
+			"demo": {
+				"p": 5,
+				"s": 101
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546020": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 401,
+			"n_user_agents": 3,
+			"publish": 6,
+			"n_unique_ips": 6,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 0,
+					"s": 1,
+					"long": -74.29149627685547
+				},
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 1,
+					"s": 0,
+					"long": 5.75
+				}
+			},
+			"history": 0
+		},
+		"1390546021": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 101,
+			"n_user_agents": 1,
+			"publish": 5,
+			"n_unique_ips": 5,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546022": {
+			"demo": {
+				"p": 9,
+				"s": 353
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 1,
+				"s": 0
+			},
+			"null": {
+				"p": 0,
+				"s": 0
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546021": {
+			"demo": {
+				"p": 8,
+				"s": 424
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 2,
+				"s": 2
+			},
+			"null": {
+				"p": 0,
+				"s": 0
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546022": {
+			"n_active_customers": 3,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 353,
+			"n_user_agents": 3,
+			"publish": 10,
+			"n_unique_ips": 8,
+			"n_unique_channels": 5,
+			"time": 1,
+			"geo_ip": {
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 0,
+					"s": 1,
+					"long": -121.8949966430664
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546021": {
+			"n_active_customers": 3,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 426,
+			"n_user_agents": 3,
+			"publish": 10,
+			"n_unique_ips": 8,
+			"n_unique_channels": 6,
+			"time": 1,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 0,
+					"s": 1,
+					"long": 5.75
+				},
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 0,
+					"s": 1,
+					"long": -121.8949966430664
+				},
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546022": {
+			"demo": {
+				"p": 11,
+				"s": 333
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 1,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546023": {
+			"demo": {
+				"p": 5,
+				"s": 349
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 2,
+				"s": 0
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546022": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 336,
+			"n_user_agents": 3,
+			"publish": 12,
+			"n_unique_ips": 8,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 1,
+					"s": 0,
+					"long": -121.8949966430664
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546023": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1
+			},
+			"subscribe_msgs": 349,
+			"n_user_agents": 2,
+			"publish": 7,
+			"n_unique_ips": 7,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546024": {
+			"demo": {
+				"p": 6,
+				"s": 110
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 2,
+				"s": 0
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546023": {
+			"demo": {
+				"p": 13,
+				"s": 685
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 1,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546024": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1
+			},
+			"subscribe_msgs": 110,
+			"n_user_agents": 2,
+			"publish": 8,
+			"n_unique_ips": 7,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 0,
+					"s": 1,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546023": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 688,
+			"n_user_agents": 3,
+			"publish": 14,
+			"n_unique_ips": 8,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				},
+				"IN.07.New Delhi": {
+					"lat": 28.600000381469727,
+					"p": 0,
+					"s": 1,
+					"long": 77.19999694824219
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546024": {
+			"demo": {
+				"p": 14,
+				"s": 837
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 0,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546025": {
+			"demo": {
+				"p": 7,
+				"s": 825
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546024": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 840,
+			"n_user_agents": 2,
+			"publish": 14,
+			"n_unique_ips": 7,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 2,
+					"s": 0,
+					"long": -74.29149627685547
+				}
+			},
+			"history": 0
+		},
+		"1390546025": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 828,
+			"n_user_agents": 3,
+			"publish": 10,
+			"n_unique_ips": 8,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 0,
+					"s": 1,
+					"long": -121.8949966430664
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546026": {
+			"demo": {
+				"p": 7,
+				"s": 489
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546025": {
+			"demo": {
+				"p": 11,
+				"s": 501
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546026": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 492,
+			"n_user_agents": 3,
+			"publish": 10,
+			"n_unique_ips": 8,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 0,
+					"s": 1,
+					"long": -121.8949966430664
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546025": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 501,
+			"n_user_agents": 1,
+			"publish": 11,
+			"n_unique_ips": 6,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 2,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546026": {
+			"demo": {
+				"p": 11,
+				"s": 776
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 0,
+				"s": 0
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546027": {
+			"demo": {
+				"p": 4,
+				"s": 594
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546026": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 2,
+				"Python-urllib/2.7": 1
+			},
+			"subscribe_msgs": 776,
+			"n_user_agents": 2,
+			"publish": 11,
+			"n_unique_ips": 7,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 1,
+					"s": 0,
+					"long": 5.75
+				},
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 1,
+					"s": 1,
+					"long": -121.8949966430664
+				}
+			},
+			"history": 0
+		},
+		"1390546027": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 597,
+			"n_user_agents": 3,
+			"publish": 7,
+			"n_unique_ips": 8,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"IN.07.New Delhi": {
+					"lat": 28.600000381469727,
+					"p": 0,
+					"s": 1,
+					"long": 77.19999694824219
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546027": {
+			"demo": {
+				"p": 13,
+				"s": 880
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546028": {
+			"demo": {
+				"p": 7,
+				"s": 847
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546027": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 880,
+			"n_user_agents": 1,
+			"publish": 13,
+			"n_unique_ips": 6,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 2,
+					"s": 0,
+					"long": -121.8949966430664
+				}
+			},
+			"history": 0
+		},
+		"1390546028": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 850,
+			"n_user_agents": 3,
+			"publish": 10,
+			"n_unique_ips": 8,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546028": {
+			"demo": {
+				"p": 10,
+				"s": 1090
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546029": {
+			"demo": {
+				"p": 7,
+				"s": 600
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546028": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 1090,
+			"n_user_agents": 1,
+			"publish": 10,
+			"n_unique_ips": 6,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 0,
+					"s": 1,
+					"long": 5.75
+				},
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 2,
+					"s": 0,
+					"long": -74.29149627685547
+				}
+			},
+			"history": 0
+		},
+		"1390546029": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 603,
+			"n_user_agents": 3,
+			"publish": 10,
+			"n_unique_ips": 8,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546030": {
+			"demo": {
+				"p": 7,
+				"s": 500
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 1
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546029": {
+			"demo": {
+				"p": 10,
+				"s": 1100
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546030": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 2,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 501,
+			"n_user_agents": 3,
+			"publish": 10,
+			"n_unique_ips": 8,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"IN.07.New Delhi": {
+					"lat": 28.600000381469727,
+					"p": 0,
+					"s": 1,
+					"long": 77.19999694824219
+				}
+			},
+			"history": 0
+		},
+		"1390546029": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 1100,
+			"n_user_agents": 1,
+			"publish": 10,
+			"n_unique_ips": 6,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 0,
+					"s": 1,
+					"long": -121.8949966430664
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546031": {
+			"demo": {
+				"p": 11,
+				"s": 800
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 5
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546030": {
+			"sub-c-81c72f76-e821-11e2-99f9-02ee2ddab7fe": {
+				"p": 0,
+				"s": 0
+			},
+			"demo": {
+				"p": 11,
+				"s": 1200
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 0,
+				"s": 0
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546031": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 805,
+			"n_user_agents": 3,
+			"publish": 14,
+			"n_unique_ips": 8,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 1,
+					"s": 0,
+					"long": 5.75
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546030": {
+			"n_active_customers": 3,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 2
+			},
+			"subscribe_msgs": 1200,
+			"n_user_agents": 2,
+			"publish": 11,
+			"n_unique_ips": 7,
+			"n_unique_channels": 5,
+			"time": 0,
+			"geo_ip": {
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 1,
+					"s": 0,
+					"long": -121.8949966430664
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546031": {
+			"demo": {
+				"p": 6,
+				"s": 1000
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546032": {
+			"demo": {
+				"p": 8,
+				"s": 500
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546031": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 1000,
+			"n_user_agents": 1,
+			"publish": 6,
+			"n_unique_ips": 6,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546032": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 503,
+			"n_user_agents": 3,
+			"publish": 11,
+			"n_unique_ips": 8,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 0,
+					"s": 1,
+					"long": 5.75
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546032": {
+			"demo": {
+				"p": 10,
+				"s": 1200
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546033": {
+			"demo": {
+				"p": 6,
+				"s": 600
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 1
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546033": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 601,
+			"n_user_agents": 3,
+			"publish": 9,
+			"n_unique_ips": 8,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"IN.07.New Delhi": {
+					"lat": 28.600000381469727,
+					"p": 0,
+					"s": 1,
+					"long": 77.19999694824219
+				}
+			},
+			"history": 0
+		},
+		"1390546032": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 1200,
+			"n_user_agents": 1,
+			"publish": 10,
+			"n_unique_ips": 6,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 0,
+					"s": 2,
+					"long": -121.8949966430664
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546034": {
+			"demo": {
+				"p": 10,
+				"s": 600
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 0
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546033": {
+			"demo": {
+				"p": 9,
+				"s": 1200
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 0,
+				"s": 2
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546034": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1
+			},
+			"subscribe_msgs": 600,
+			"n_user_agents": 2,
+			"publish": 13,
+			"n_unique_ips": 7,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 1,
+					"s": 0,
+					"long": -121.8949966430664
+				}
+			},
+			"history": 0
+		},
+		"1390546033": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 1202,
+			"n_user_agents": 2,
+			"publish": 9,
+			"n_unique_ips": 7,
+			"n_unique_channels": 4,
+			"time": 0,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 1,
+					"s": 0,
+					"long": 5.75
+				},
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 1,
+					"s": 1,
+					"long": -121.8949966430664
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546035": {
+			"demo": {
+				"p": 7,
+				"s": 600
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 6
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546034": {
+			"demo": {
+				"p": 7,
+				"s": 800
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546035": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 606,
+			"n_user_agents": 3,
+			"publish": 10,
+			"n_unique_ips": 8,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				}
+			},
+			"history": 0
+		},
+		"1390546034": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 800,
+			"n_user_agents": 1,
+			"publish": 7,
+			"n_unique_ips": 6,
+			"n_unique_channels": 2,
+			"time": 0,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 0,
+					"s": 1,
+					"long": 5.75
+				},
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 0,
+					"s": 1,
+					"long": -121.8949966430664
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546035": {
+			"demo": {
+				"p": 7,
+				"s": 1000
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546036": {
+			"demo": {
+				"p": 6,
+				"s": 400
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546035": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 1000,
+			"n_user_agents": 1,
+			"publish": 7,
+			"n_unique_ips": 6,
+			"n_unique_channels": 2,
+			"time": 0,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 1,
+					"s": 0,
+					"long": 5.75
+				},
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 2,
+					"s": 0,
+					"long": -121.8949966430664
+				}
+			},
+			"history": 0
+		},
+		"1390546036": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 403,
+			"n_user_agents": 3,
+			"publish": 9,
+			"n_unique_ips": 8,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"IN.07.New Delhi": {
+					"lat": 28.600000381469727,
+					"p": 0,
+					"s": 1,
+					"long": 77.19999694824219
+				}
+			},
+			"history": 0
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546037": {
+			"demo": {
+				"p": 10,
+				"s": 800
+			},
+			"e19f2bb0-623a-11df-98a1-fbd39d75aa3f": {
+				"p": 3,
+				"s": 3
+			}
+		}
+	}
+},
+{
+	"top_customers": {
+		"1390546036": {
+			"demo": {
+				"p": 8,
+				"s": 1000
+			}
+		}
+	}
+},
+{
+	"jordan-devbuild": {
+		"1390546037": {
+			"n_active_customers": 2,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1,
+				"Python-urllib/2.7": 1,
+				"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36": 1
+			},
+			"subscribe_msgs": 803,
+			"n_user_agents": 3,
+			"publish": 13,
+			"n_unique_ips": 8,
+			"n_unique_channels": 3,
+			"time": 0,
+			"geo_ip": {
+				"NL.Other.Other": {
+					"lat": 52.5,
+					"p": 1,
+					"s": 0,
+					"long": 5.75
+				},
+				"US.NJ.Woodbridge": {
+					"lat": 40.5525016784668,
+					"p": 1,
+					"s": 0,
+					"long": -74.29149627685547
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 0,
+					"s": 1,
+					"long": -97.0
+				}
+			},
+			"history": 0
+		},
+		"1390546036": {
+			"n_active_customers": 1,
+			"history_msgs": 0,
+			"unique_user_agents": {
+				"curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3": 1
+			},
+			"subscribe_msgs": 1000,
+			"n_user_agents": 1,
+			"publish": 8,
+			"n_unique_ips": 6,
+			"n_unique_channels": 2,
+			"time": 0,
+			"geo_ip": {
+				"US.CA.San Jose": {
+					"lat": 37.33940124511719,
+					"p": 0,
+					"s": 1,
+					"long": -121.8949966430664
+				},
+				"US.Other.Other": {
+					"lat": 38.0,
+					"p": 1,
+					"s": 0,
+					"long": -97.0
+				}
+			},
+			"history": 10
+		}
+	}
+}
+
+
+
+],
+"13905455615331146"]
