@@ -29,7 +29,7 @@ var WorldMapVM = function () {
 
     self.message = function (data) {
         self.worldmapDataQueue.push(data);
-        self.streamDataArray.push(data);
+
     };
 
 
@@ -66,7 +66,7 @@ var WorldMapVM = function () {
                     .neighbors(world.objects.countries.geometries);
 
                 g.append("g").attr("id", "countries").selectAll(
-                        "path").data(countries).enter().append("path").attr("id",function (d, i) {
+                        "path").data(countries).enter().append("path").attr("id", function (d, i) {
                         return d.id;
                     })//.on("click", country_clicked)
                     .attr("title", function (d, i) {
@@ -95,6 +95,7 @@ var WorldMapVM = function () {
                 // load and display the cities
 
 
+                self.getPubNubTraficData();
             });
 
         var zm = d3.behavior.zoom().scaleExtent([1, 6]).on(
@@ -119,5 +120,116 @@ var WorldMapVM = function () {
         svg.call(zm);
     };
 
+    self.renderPoint = function () {
+
+        var colors = ["#299dff"];
+        var color = colors[Math.floor(Math.random() * colors.length)];
+
+        var msg = self.worldmapDataQueue.shift();
+
+        var pubCircleRadius = 3;
+        var subCircleRadius = 3;
+        if (!msg) return;
+
+        var width = self.worldmapProperty.worldmapWidth();
+        var height = self.worldmapProperty.worldmapHeight();
+
+        var zoomPan = d3.select("#zoomPanal");
+        var g = zoomPan.append("g");
+
+        if (self.isZoom == true) {
+            var zoomLevel = self.worldmapProperty.zoomLevel();
+            if (zoomLevel > 1 && zoomLevel < 2) {
+                pubCircleRadius = 2;
+                subCircleRadius = 1.5;
+            } else if (zoomLevel >= 2 && zoomLevel < 3) {
+
+                pubCircleRadius = 1.5
+                subCircleRadius = 1;
+            } else if (zoomLevel >= 3) {
+
+                pubCircleRadius = 0.9;
+                subCircleRadius = 1;
+            } else if (zoomLevel >= 5 && zoomLevel <= 6) {
+
+                pubCircleRadius = 0.8;
+                subCircleRadius = 1;
+
+            }
+        }
+        var pub = g.selectAll("circle.pub")
+            .data([msg.pub])
+            .enter()
+            .append("circle")
+            .attr("fill", "green")
+            .attr("stroke", "#FFFF00")
+            .attr("stroke-width", "1px")
+            .attr('class', 'pub')
+            .attr('r', pubCircleRadius)
+            .attr("cx", function (d, i) {
+
+
+                return self.worldmapProperty.projection([d[1], d[0]])[0];
+            })
+            .attr("cy", function (d, i) {
+                return self.worldmapProperty.projection([d[1], d[0]])[1];
+            })
+            .transition()
+            .duration(500)
+            .attr('r', pubCircleRadius + 3)
+            .style("opacity", 1)
+            .each("end", function () {
+                d3.select(this)
+                    .transition()
+                    .duration(300)
+                    .attr('r', pubCircleRadius);
+            });
+
+        var subs = g.selectAll("circle.sub")
+            .data(msg.subs)
+            .enter()
+            .append("circle")
+            .attr('class', 'sub')
+            .attr("fill", color)
+            .attr("stroke", "#ffffff")
+            .attr("stroke-width", "1px")
+            .attr('r', subCircleRadius)
+            .attr("cx", function (d, i) {
+                return self.worldmapProperty.projection([d[1], d[0]])[0];
+            })
+            .attr("cy",function (d, i) {
+                return self.worldmapProperty.projection([d[1], d[0]])[1];
+            }).transition()
+            .duration(1500)
+            .attr('r', subCircleRadius)
+            .transition()
+            .duration(1000)
+            .attr('r', subCircleRadius + 2)
+
+        g.transition()
+            .duration(1000)
+            //.attr('r', 2)
+            .style("opacity", 0)
+            .each("end", function () {
+                d3.select(this).remove();
+            });
+
+        if (self.isZoom == true) {
+            d3.selectAll('.sub').attr("r", 2).attr("stroke-width", "0.5px");
+            d3.selectAll('.pub').attr("r", 3).attr("stroke-width", "0.5px").transition()
+                .duration(500)
+                .attr('r', 5)
+                .style("opacity", 1)
+                .each("end", function () {
+                    d3.select(this)
+                        .transition()
+                        .duration(300)
+                        .attr('r', 2);
+                });
+        }
+
+    };
+    self.renderPoint();
+    setInterval(self.renderPoint, 500);
 
 };
