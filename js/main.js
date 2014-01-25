@@ -30,7 +30,7 @@ require([
 });
 
 
-require(["d3", "vm/pubnub.dashboard", "vm/pubnub.worldmap", "vm/pubnub.messagedata", "vm/pubnub.devicedata"], function (d3) {
+require(["d3", "vm/pubnub.dashboard", "vm/pubnub.worldmap.dev", "vm/pubnub.messagedata", "vm/pubnub.devicedata"], function (d3) {
     console.log(d3);
     window.currentdashboard = new DasboardVM();
     currentdashboard.worldMapVM.plotWorldMap();
