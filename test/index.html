@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+
+<script src="../js/lib/jquery-1.10.2.js"></script>
+<script src="../js/lib/pubnub.js"></script>
+<script>
+
+
+    var streamDataArray = [];
+    var currentWorkingQueue = [];
+
+    function getRealTimeStatsChannelData() {
+
+        var pubnub = PUBNUB.init({
+            subscribe_key: 'e19f2bb0-623a-11df-98a1-fbd39d75aa3f',
+            publish_key: 'ea1afbc1-70a3-43c1-990c-ede5cf65a542',
+            secret_key: 'e42894be-7ed4-5526-a305-729789e6b443',
+            origin: 'jordan.devbuild.pubnub.com', // THIS IS IMPORTANT
+            windowing: 500
+        });
+
+        var message = {
+            'subkeys': [
+                'e19f2bb0-623a-11df-98a1-fbd39d75aa3f'
+            ]
+        }
+
+        pubnub.publish({ 'channel': 'real-time-stats', 'message': message });
+
+        pubnub.subscribe({'channel': 'real-time-stats', 'message': displayMsg});
+
+        function displayMsg(msg) {
+
+            streamDataArray.push(msg);
+
+        }
+
+        setInterval(function () {
+
+            currentWorkingQueue.push(streamDataArray);
+            streamDataArray = [];
+            console.log("streamDataArray", streamDataArray);
+        }, 9 * 1000);
+
+        setInterval(function () {
+            console.log(currentWorkingQueue.shift());
+        }, 9 * 1000)
+    }
+
+    getRealTimeStatsChannelData();
+</script>
+
+
+</body>
+</html>
