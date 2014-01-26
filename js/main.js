@@ -32,7 +32,6 @@ require([
 
 
 require(["d3", "vm/pubnub.dashboard", "vm/pubnub.worldmap.dev","vm/pubnub.rtsgraph.dev"], function (d3) {
-    console.log(d3);
     window.currentdashboard = new DasboardVM();
     currentdashboard.worldMapVM.plotWorldMap();
     currentdashboard.realTimeGraphVM.getRealTimeStatsData();

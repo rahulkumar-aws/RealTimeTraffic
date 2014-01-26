@@ -48,7 +48,6 @@ var RealTimeGraphVM = function () {
 
         function displayMsg(msg) {
 
-            /*Put rts channel data into an Array with time interval 30 sec*/
             self.streamDataArray.push(msg);
 
         }
@@ -185,17 +184,14 @@ var RealTimeGraphVM = function () {
                 temp.push(aa);
             }
 
-
             self.topTenCountryByDevice = _.uniq(temp, function (country) {
                 return country.name;
             });
-
-
-            console.log("******** ", self.topTenCountryByDevice);
-
             self.plotTopCountriesByTotalMsgVolumeChart(self.topTenCountryData);
             self.plotTopCountriesByDeviceChart(self.topTenCountryByDevice);
             self.plotTopDeviceChart(self.usedDeviceData);
+            self.plotTopTenChannelChart();
+            self.plotTopTenChannelByDeviceChart();
 
         }, 7 * 1000)
     };
@@ -275,9 +271,7 @@ var RealTimeGraphVM = function () {
 
         };
 
-
     };
-
 
     self.plotTopCountriesByTotalMsgVolumeChart = function (msgvolumedata) {
 
@@ -367,7 +361,6 @@ var RealTimeGraphVM = function () {
 
         smoothie.streamTo(document.getElementById("message-traffic-chart"), 500);
 
-
         // Data
         var line1 = new TimeSeries();
         var line2 = new TimeSeries();
@@ -388,7 +381,7 @@ var RealTimeGraphVM = function () {
 
     self.plotTopCountriesByDeviceChart = function (deviceData) {
 
-        var color = ["#5AAD2A", "#007AFF", "#E573B9", "#FFCC00", "#E30518", "#708090", "#FFFF00", "#A0522C", "#FFB6C1", "#9732CE"];
+
         $("#top-ten-countries-device-div").html(" ");
         function type(d) {
             d.value = +d.value;
@@ -407,9 +400,8 @@ var RealTimeGraphVM = function () {
             - margin.bottom;
 
 
-
         var svg = d3.select("#top-ten-countries-device-div").append("svg").attr("width",
-                width+ margin.left + margin.right).attr("height",
+                width + margin.left + margin.right).attr("height",
                 height + margin.top + margin.bottom).append("g").attr(
                 "transform",
                 "translate(" + margin.left + "," + margin.top + ")");
@@ -448,15 +440,12 @@ var RealTimeGraphVM = function () {
                 "");
 
         svg.selectAll(".bar1").data(data).enter().append("rect").attr(
-                "class", "bar1").attr("x",function (d) {
+                "class", "bar").attr("x",function (d) {
                 return x(d.name);
             }).attr("width", x.rangeBand()).attr("y",function (d) {
                 return y(d.value);
-            }).attr("height", function (d) {
+            }).attr("height",function (d) {
                 return height - y(d.value);
-            })
-            .attr("fill",function (d, i) {
-                return color[i];
             }).on("mouseover", function (d) {
                 div.transition()
                     .duration(200)
@@ -513,9 +502,163 @@ var RealTimeGraphVM = function () {
             function (d) {
                 return d.data.device;
             });
-
-
     };
 
 
+    self.plotTopTenChannelChart = function () {
+
+        $("#top-ten-channel-by-message-div").html(" ");
+        var width = $("#top-ten-channel-by-message-div").width();
+        var height = $("#top-ten-channel-by-message-div").height();
+        var margin = { "top": 30, "right": 20, "bottom": 20, "left": 30 }, width = width - margin.left - margin.right, height = height
+            - margin.top - margin.bottom;
+        var format = d3.format(",.0f");
+        var x = d3.scale.linear().range([ 0, width ]), y = d3.scale.ordinal()
+            .rangeRoundBands([ 0, height], .1);
+
+        var xAxis = d3.svg.axis().scale(x).orient("top").tickSize(-height), yAxis = d3.svg
+            .axis().scale(y).orient("left").tickSize(0);
+
+        var svg = d3.select("#top-ten-channel-by-message-div").append("svg").attr("width",
+                width + margin.left + margin.right).attr("height",
+                height + margin.top + margin.bottom).append("g").attr("transform",
+                "translate(" + (margin.left + 10) + "," + margin.top + ")");
+
+        var div = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+        d3.csv("./data/TopTenChannel.csv", function (data) {
+
+            // Parse numbers, and sort by value.
+            data.forEach(function (d) {
+                d.totalMessageVolume = +d.totalMessageVolume;
+            });
+            data.sort(function (a, b) {
+                return b.totalMessageVolume - a.totalMessageVolume;
+            });
+
+            // Set the scale domain.
+            x.domain([ 0, d3.max(data, function (d) {
+                return d.totalMessageVolume;
+            }) ]);
+            y.domain(data.map(function (d) {
+
+                return d.channelName;
+            }));
+
+            var bar = svg.selectAll("g.bar").data(data).enter().append("g")
+                .attr("class", "bar").attr("transform", function (d) {
+                    return "translate(0," + y(d.channelName) + ")";
+                });
+
+            bar.append("rect").attr("width",function (d) {
+                return x(d.totalMessageVolume);
+            }).attr("height", y.rangeBand())
+                .on("mouseover", function (d) {
+                    div.transition()
+                        .duration(200)
+                        .style("opacity", .9);
+                    div.html(d.totalMessageVolume + "<br/>")
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px");
+                })
+                .on("mouseout", function (d) {
+                    div.transition()
+                        .duration(200)
+                        .style("opacity", 0);
+                });
+
+            /*bar.append("text").attr("class", "value").attr("x", function(d) {
+             return x(d.value);
+             }).attr("y", y.rangeBand() / 2).attr("dx", -3).attr("dy", ".35em")
+             .attr("text-anchor", "end").text(function(d) {
+             return format(d.value);
+             });*/
+
+            svg.append("g").attr("class", "x axis").call(xAxis);
+
+            svg.append("g").attr("class", "y axis").call(yAxis);
+        });
+
+    };
+
+    self.plotTopTenChannelByDeviceChart = function(){
+
+		//top-ten-channel-by-device-div
+        $("#top-ten-channel-by-device-div").html(" ");
+
+		var width = $("#top-ten-channel-by-device-div").width();
+		var height = $("#top-ten-channel-by-device-div").height();
+		var margin = { "top":30, "right":20, "bottom":20, "left":30 }, width = width - margin.left - margin.right, height = height
+				- margin.top - margin.bottom;
+		var format = d3.format(",.0f");
+		var x = d3.scale.linear().range([ 0, width ]), y = d3.scale.ordinal()
+				.rangeRoundBands([ 0, height], .1);
+
+		var xAxis = d3.svg.axis().scale(x).orient("top").tickSize(-height), yAxis = d3.svg
+				.axis().scale(y).orient("left").tickSize(0);
+
+		var svg = d3.select("#top-ten-channel-by-device-div").append("svg").attr("width",
+				width + margin.left + margin.right).attr("height",
+				height + margin.top + margin.bottom).append("g").attr("transform",
+				"translate(" + (margin.left+10) + "," + margin.top + ")");
+
+		var div = d3.select("body").append("div")
+	    .attr("class", "tooltip")
+	    .style("opacity", 0);
+
+		d3.csv("./data/TopTenChannelByDevice.csv", function(data) {
+
+			// Parse numbers, and sort by value.
+			data.forEach(function(d) {
+				d.totalMessageVolume = +d.totalMessageVolume;
+			});
+			data.sort(function(a, b) {
+				return b.totalMessageVolume - a.totalMessageVolume;
+			});
+
+			// Set the scale domain.
+			x.domain([ 0, d3.max(data, function(d) {
+				return d.totalMessageVolume;
+			}) ]);
+			y.domain(data.map(function(d) {
+
+				return d.channelName;
+			}));
+
+			var bar = svg.selectAll("g.bar").data(data).enter().append("g")
+					.attr("class", "bar").attr("transform", function(d) {
+						return "translate(0," + y(d.channelName) + ")";
+					});
+
+			bar.append("rect").attr("width", function(d) {
+				return x(d.totalMessageVolume);
+			}).attr("height", y.rangeBand()).on("mouseover", function(d) {
+            div.transition()
+                .duration(200)
+                .style("opacity", .9);
+            div .html(d.totalMessageVolume + "<br/>")
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY - 28) + "px");
+            })
+        .on("mouseout", function(d) {
+            div.transition()
+                .duration(200)
+                .style("opacity", 0);
+        });
+
+			/*bar.append("text").attr("class", "value").attr("x", function(d) {
+				return x(d.value);
+			}).attr("y", y.rangeBand() / 2).attr("dx", -3).attr("dy", ".35em")
+					.attr("text-anchor", "end").text(function(d) {
+						return format(d.value);
+					});*/
+
+			svg.append("g").attr("class", "x axis").call(xAxis);
+
+			svg.append("g").attr("class", "y axis").call(yAxis);
+		});
+
+	};
 };
