@@ -16,6 +16,7 @@ require(
     [
         "d3",
         "jquery",
+        "lib/json2",
         "lib/underscore",
         "lib/pubnub",
         "lib/queue",
@@ -30,9 +31,11 @@ require([
 });
 
 
-require(["d3", "vm/pubnub.dashboard", "vm/pubnub.worldmap.dev", "vm/pubnub.messagedata", "vm/pubnub.devicedata"], function (d3) {
+require(["d3", "vm/pubnub.dashboard", "vm/pubnub.worldmap.dev","vm/pubnub.rtsgraph.dev"], function (d3) {
     console.log(d3);
     window.currentdashboard = new DasboardVM();
     currentdashboard.worldMapVM.plotWorldMap();
+    currentdashboard.realTimeGraphVM.getRealTimeStatsData();
+
     ko.applyBindings(currentdashboard);
 })

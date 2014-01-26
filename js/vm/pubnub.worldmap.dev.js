@@ -230,6 +230,8 @@ var WorldMapVM = function () {
 
     };
     self.renderPoint();
-    setInterval(self.renderPoint, 500);
+    setInterval(self.renderPoint, 1*1000);
+
+
 
 };
