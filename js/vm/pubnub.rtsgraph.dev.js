@@ -17,6 +17,8 @@ var RealTimeGraphVM = function () {
     self.topTenCountryData = [];
     self.totalPubMessage = ko.observable(0);
     self.totalSubMessage = ko.observable(0);
+    self.pPerSecond = ko.observable(0);
+    self.sPerSecond = ko.observable(0);
 
 
     self.getRealTimeStatsData = function () {
@@ -51,7 +53,7 @@ var RealTimeGraphVM = function () {
             self.workingQueue.push(self.streamDataArray);
             self.streamDataArray = [];
 
-        }, 10 * 1000);
+        }, 5 * 1000);
 
         setInterval(function () {
 
@@ -108,7 +110,7 @@ var RealTimeGraphVM = function () {
             self.plotTopCountriesByTotalMsgVolumeChart(self.topTenCountryData);
 
 
-        }, 15 * 1000)
+        }, 7 * 1000)
     };
 
     self.createRTSStatsMatrix = function (data) {
@@ -175,7 +177,7 @@ var RealTimeGraphVM = function () {
                 self.totalPubMessage(self.totalPubMessage() + value);
             }
             if (key == 's') {
-                self.totalSubMessage(self.totalSubMessage() + value);
+                 self.totalSubMessage(self.totalSubMessage() + value);
             }
 
         };
@@ -268,9 +270,10 @@ var RealTimeGraphVM = function () {
     };
     self.plotNetworkTrafficGraph = function () {
 
-        var smoothie = new SmoothieChart({scaleSmoothing: 1, grid: {fillStyle: 'rgba(0,0,0,0.34)'}});
+        var smoothie = new SmoothieChart({scaleSmoothing: 1, grid: {fillStyle: 'rgba(0,0,0,0.34)'},maxValueScale:1.5});
 
-        smoothie.streamTo(document.getElementById("message-traffic-chart"), 1000);
+        smoothie.streamTo(document.getElementById("message-traffic-chart"), 500);
+
 
         // Data
         var line1 = new TimeSeries();
@@ -278,7 +281,7 @@ var RealTimeGraphVM = function () {
 
         // Add a random value to each line every second
         setInterval(function () {
-            line1.append(new Date().getTime(), self.totalPubMessage());
+            line1.append(new Date().getTime(),self.totalPubMessage());
             line2.append(new Date().getTime(), self.totalSubMessage());
         }, 1000);
 
@@ -288,7 +291,7 @@ var RealTimeGraphVM = function () {
 
     };
 
-     self.plotNetworkTrafficGraph();
+    self.plotNetworkTrafficGraph();
 
     self.plotTopCountriesByDeviceChart = function () {
     };
