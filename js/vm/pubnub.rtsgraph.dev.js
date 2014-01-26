@@ -469,6 +469,9 @@ var RealTimeGraphVM = function () {
         var width = $("#pie-chart").width(), height = $("#pie-chart").height(), radius = Math
             .min(width, height) / 2;
 
+         var div = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
 
         var data = deviceData;
         var color = d3.scale.ordinal().range(
@@ -494,7 +497,19 @@ var RealTimeGraphVM = function () {
 
         g.append("path").attr("d", arc).style("fill", function (d) {
             return color(d.data.device);
-        });
+        }).on("mouseover", function (d) {
+                div.transition()
+                    .duration(200)
+                    .style("opacity", .9);
+                div.html(d.data.used + "<br/>")
+                    .style("left", (d3.event.pageX) + "px")
+                    .style("top", (d3.event.pageY - 28) + "px");
+            })
+            .on("mouseout", function (d) {
+                div.transition()
+                    .duration(200)
+                    .style("opacity", 0);
+            });
 
         g.append("text").attr("transform",function (d) {
             return "translate(" + arc.centroid(d) + ")";
@@ -569,13 +584,6 @@ var RealTimeGraphVM = function () {
                         .style("opacity", 0);
                 });
 
-            /*bar.append("text").attr("class", "value").attr("x", function(d) {
-             return x(d.value);
-             }).attr("y", y.rangeBand() / 2).attr("dx", -3).attr("dy", ".35em")
-             .attr("text-anchor", "end").text(function(d) {
-             return format(d.value);
-             });*/
-
             svg.append("g").attr("class", "x axis").call(xAxis);
 
             svg.append("g").attr("class", "y axis").call(yAxis);
@@ -583,82 +591,74 @@ var RealTimeGraphVM = function () {
 
     };
 
-    self.plotTopTenChannelByDeviceChart = function(){
+    self.plotTopTenChannelByDeviceChart = function () {
 
-		//top-ten-channel-by-device-div
+        //top-ten-channel-by-device-div
         $("#top-ten-channel-by-device-div").html(" ");
 
-		var width = $("#top-ten-channel-by-device-div").width();
-		var height = $("#top-ten-channel-by-device-div").height();
-		var margin = { "top":30, "right":20, "bottom":20, "left":30 }, width = width - margin.left - margin.right, height = height
-				- margin.top - margin.bottom;
-		var format = d3.format(",.0f");
-		var x = d3.scale.linear().range([ 0, width ]), y = d3.scale.ordinal()
-				.rangeRoundBands([ 0, height], .1);
+        var width = $("#top-ten-channel-by-device-div").width();
+        var height = $("#top-ten-channel-by-device-div").height();
+        var margin = { "top": 30, "right": 20, "bottom": 20, "left": 30 }, width = width - margin.left - margin.right, height = height
+            - margin.top - margin.bottom;
+        var format = d3.format(",.0f");
+        var x = d3.scale.linear().range([ 0, width ]), y = d3.scale.ordinal()
+            .rangeRoundBands([ 0, height], .1);
 
-		var xAxis = d3.svg.axis().scale(x).orient("top").tickSize(-height), yAxis = d3.svg
-				.axis().scale(y).orient("left").tickSize(0);
+        var xAxis = d3.svg.axis().scale(x).orient("top").tickSize(-height), yAxis = d3.svg
+            .axis().scale(y).orient("left").tickSize(0);
 
-		var svg = d3.select("#top-ten-channel-by-device-div").append("svg").attr("width",
-				width + margin.left + margin.right).attr("height",
-				height + margin.top + margin.bottom).append("g").attr("transform",
-				"translate(" + (margin.left+10) + "," + margin.top + ")");
+        var svg = d3.select("#top-ten-channel-by-device-div").append("svg").attr("width",
+                width + margin.left + margin.right).attr("height",
+                height + margin.top + margin.bottom).append("g").attr("transform",
+                "translate(" + (margin.left + 10) + "," + margin.top + ")");
 
-		var div = d3.select("body").append("div")
-	    .attr("class", "tooltip")
-	    .style("opacity", 0);
+        var div = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
 
-		d3.csv("./data/TopTenChannelByDevice.csv", function(data) {
+        d3.csv("./data/TopTenChannelByDevice.csv", function (data) {
 
-			// Parse numbers, and sort by value.
-			data.forEach(function(d) {
-				d.totalMessageVolume = +d.totalMessageVolume;
-			});
-			data.sort(function(a, b) {
-				return b.totalMessageVolume - a.totalMessageVolume;
-			});
+            // Parse numbers, and sort by value.
+            data.forEach(function (d) {
+                d.totalMessageVolume = +d.totalMessageVolume;
+            });
+            data.sort(function (a, b) {
+                return b.totalMessageVolume - a.totalMessageVolume;
+            });
 
-			// Set the scale domain.
-			x.domain([ 0, d3.max(data, function(d) {
-				return d.totalMessageVolume;
-			}) ]);
-			y.domain(data.map(function(d) {
+            // Set the scale domain.
+            x.domain([ 0, d3.max(data, function (d) {
+                return d.totalMessageVolume;
+            }) ]);
+            y.domain(data.map(function (d) {
 
-				return d.channelName;
-			}));
+                return d.channelName;
+            }));
 
-			var bar = svg.selectAll("g.bar").data(data).enter().append("g")
-					.attr("class", "bar").attr("transform", function(d) {
-						return "translate(0," + y(d.channelName) + ")";
-					});
+            var bar = svg.selectAll("g.bar").data(data).enter().append("g")
+                .attr("class", "bar").attr("transform", function (d) {
+                    return "translate(0," + y(d.channelName) + ")";
+                });
 
-			bar.append("rect").attr("width", function(d) {
-				return x(d.totalMessageVolume);
-			}).attr("height", y.rangeBand()).on("mouseover", function(d) {
-            div.transition()
-                .duration(200)
-                .style("opacity", .9);
-            div .html(d.totalMessageVolume + "<br/>")
-                .style("left", (d3.event.pageX) + "px")
-                .style("top", (d3.event.pageY - 28) + "px");
-            })
-        .on("mouseout", function(d) {
-            div.transition()
-                .duration(200)
-                .style("opacity", 0);
+            bar.append("rect").attr("width",function (d) {
+                return x(d.totalMessageVolume);
+            }).attr("height", y.rangeBand()).on("mouseover", function (d) {
+                    div.transition()
+                        .duration(200)
+                        .style("opacity", .9);
+                    div.html(d.totalMessageVolume + "<br/>")
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px");
+                })
+                .on("mouseout", function (d) {
+                    div.transition()
+                        .duration(200)
+                        .style("opacity", 0);
+                });
+            svg.append("g").attr("class", "x axis").call(xAxis);
+
+            svg.append("g").attr("class", "y axis").call(yAxis);
         });
 
-			/*bar.append("text").attr("class", "value").attr("x", function(d) {
-				return x(d.value);
-			}).attr("y", y.rangeBand() / 2).attr("dx", -3).attr("dy", ".35em")
-					.attr("text-anchor", "end").text(function(d) {
-						return format(d.value);
-					});*/
-
-			svg.append("g").attr("class", "x axis").call(xAxis);
-
-			svg.append("g").attr("class", "y axis").call(yAxis);
-		});
-
-	};
+    };
 };
