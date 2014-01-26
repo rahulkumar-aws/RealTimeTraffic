@@ -74,6 +74,7 @@ var RealTimeGraphVM = function () {
             self.allCountry = [];
             self.totalPubMessage = ko.observable(0);
             self.totalSubMessage = ko.observable(0);
+            $(".tooltip" ).remove();
             for (var i = 0; i < currentRTSWorkingData.length; i++) {
 
                 var data = currentRTSWorkingData[i];
@@ -281,6 +282,8 @@ var RealTimeGraphVM = function () {
         }
 
         $("#top-ten-countries-message-div").html(" ");
+
+
         var wi = $("#top-ten-countries-message-div").width();
         var hi = $("#top-ten-countries-message-div").height();
         var margin = {
@@ -383,6 +386,7 @@ var RealTimeGraphVM = function () {
 
 
         $("#top-ten-countries-device-div").html(" ");
+
         function type(d) {
             d.value = +d.value;
             return d;
@@ -439,7 +443,7 @@ var RealTimeGraphVM = function () {
                 ".71em").style("text-anchor", "end").text(
                 "");
 
-        svg.selectAll(".bar1").data(data).enter().append("rect").attr(
+        svg.selectAll(".bar").data(data).enter().append("rect").attr(
                 "class", "bar").attr("x",function (d) {
                 return x(d.name);
             }).attr("width", x.rangeBand()).attr("y",function (d) {
@@ -465,6 +469,7 @@ var RealTimeGraphVM = function () {
     self.plotTopDeviceChart = function (deviceData) {
 
         $("#pie-chart").html(" ");
+
 
         var width = $("#pie-chart").width(), height = $("#pie-chart").height(), radius = Math
             .min(width, height) / 2;
@@ -523,6 +528,7 @@ var RealTimeGraphVM = function () {
     self.plotTopTenChannelChart = function () {
 
         $("#top-ten-channel-by-message-div").html(" ");
+
         var width = $("#top-ten-channel-by-message-div").width();
         var height = $("#top-ten-channel-by-message-div").height();
         var margin = { "top": 30, "right": 20, "bottom": 20, "left": 30 }, width = width - margin.left - margin.right, height = height
@@ -595,6 +601,7 @@ var RealTimeGraphVM = function () {
 
         //top-ten-channel-by-device-div
         $("#top-ten-channel-by-device-div").html(" ");
+
 
         var width = $("#top-ten-channel-by-device-div").width();
         var height = $("#top-ten-channel-by-device-div").height();

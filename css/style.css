@@ -126,6 +126,9 @@ body {
 .bar rect {
     fill: steelblue;
 }
+.bar rect:hover {
+    fill: brown;
+}
 
 .bar text.value {
     fill: white;
