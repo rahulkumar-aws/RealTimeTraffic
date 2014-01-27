@@ -10,6 +10,15 @@ var WorldMapVM = function () {
         isZoomed: false
     };
 
+    self.countryCode = {'BD': 50, 'BE': 56, 'BF': 854, 'BG': 100, 'BA': 70, 'BN': 96, 'JP': 392, 'BI': 108, 'BJ': 204, 'KZ': 398, 'BT': 64, 'JM': 388, 'JO': 400, 'BR': 76, 'BY': 112, 'BZ': 84, 'RU': 643, 'RW': 646, 'RS': 688, 'TL': 626, 'TM': 795, 'TJ': 762, 'RO': 642, 'GW': 624, 'GT': 320, 'GR': 300, 'GQ': 226, 'GY': 328, 'GF': 254, 'GE': 268, 'GB': 826, 'GA': 266, 'GN': 324, 'GM': 270, 'GL': 304, 'GH': 288, 'OM': 512, 'TN': 788, 'IL': 376, 'BW': 72, 'HR': 191, 'HT': 332, 'HU': 348, 'HN': 340, 'PR': 630, 'PT': 620, 'PY': 600, 'PA': 591, 'PG': 598, 'PE': 604, 'PK': 586, 'PH': 608, 'PL': 616, 'ZM': 894, 'EH': 732, 'EE': 233, 'EG': 818, 'ZA': 710, 'EC': 218, 'IT': 380, 'VN': 704, 'SB': 90, 'ET': 231, 'ZW': 716, 'ES': 724, 'ER': 232, 'MG': 450, 'UY': 858, 'UZ': 860, 'MM': 104, 'ML': 466, 'MN': 496, 'US': 840, 'MW': 454, 'MR': 478, 'UG': 800, 'UA': 804, 'MX': 484, 'AT': 40, 'FR': 250, 'MA': 504, 'FI': 246, 'FJ': 242, 'FK': 238, 'NI': 558, 'NL': 528, 'NO': 578, 'NA': 516, 'NC': 540, 'NE': 562, 'NG': 566, 'NZ': 554, 'NP': 524, 'CH': 756, 'CO': 170, 'CN': 156, 'CM': 120, 'CL': 152, 'CA': 124, 'CG': 178, 'CF': 140, 'CZ': 203, 'CY': 196, 'CR': 188, 'CU': 192, 'SZ': 748, 'SY': 760, 'KG': 417, 'KE': 404, 'SR': 740, 'KH': 116, 'SV': 222, 'SK': 703, 'SJ': 744, 'SO': 706, 'SN': 686, 'SL': 694, 'KW': 414, 'SA': 682, 'SE': 752, 'SD': 729, 'DO': 214, 'DJ': 262, 'DK': 208, 'DE': 276, 'YE': 887, 'DZ': 12, 'LB': 422, 'TR': 792, 'LK': 144, 'LV': 428, 'LT': 440, 'LU': 442, 'LR': 430, 'LS': 426, 'TH': 764, 'TG': 768, 'TD': 148, 'AE': 784, 'AF': 4, 'IQ': 368, 'IS': 352, 'AM': 51, 'AL': 8, 'AO': 24, 'AR': 32, 'AU': 36, 'VU': 548, 'IN': 356, 'AZ': 31, 'IE': 372, 'ID': 360, 'MY': 458, 'QA': 634, 'MZ': 508};
+    self.countryList = {
+        "asia": ['IN', 'JP', 'BD', 'CN', 'ID', 'LK', 'MY', 'TH', 'TW', 'PK', 'PH'],
+        "northAmerica": ['US', 'MX', 'CA'],
+        "southAmerica": ['BR', 'CU'],
+        "europe": ['RU', 'RO', 'SE', 'SZ', 'TR', 'IE', 'GB', 'GF', 'ES', 'CH', 'NL', 'DE', 'DK', 'HU'],
+        "africa": ['KE', 'ZA', 'ZW', 'EG'],
+        "oceania": ['AU', 'NZ']
+    };
 
     self.getPubNubTraficData = function () {
 
@@ -31,6 +40,36 @@ var WorldMapVM = function () {
         self.worldmapDataQueue.push(data);
 
     };
+
+
+    self.getContinentName = function(id){
+
+        for(key in self.countryCode){
+
+            if(id == self.countryCode[key]){
+
+                for(code in self.countryList){
+
+                    console.log(self.countryList[code])
+
+                    var continentName = _.indexOf(self.countryList[code],key);
+
+                    if(continentName != -1){
+
+                        alert(code);
+                    }
+
+                }
+
+
+            }
+        }
+
+
+
+    };
+
+
 
 
     self.plotWorldMap = function () {
@@ -82,8 +121,12 @@ var WorldMapVM = function () {
                     }).on("click", function (d) {
                         localStorage.currentLevel = 2;
                         localStorage.countryId = d.id;
-                        var data ={};
-                        data.id= d.id;
+                        var data = {};
+                        data.id = d.id;
+
+
+                        self.getContinentName(d.id);
+
                         data.continentName = "northAmerica";
                         postbox.notifySubscribers(data.continentName, "levelChange");
                     })
