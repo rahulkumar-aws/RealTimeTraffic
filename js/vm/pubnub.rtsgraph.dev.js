@@ -13,7 +13,7 @@ var RealTimeGraphVM = function () {
             totalHistoryRequest: ko.observable(0)
         };
         //Country Array
-        self.chartZoomLevel = ko.observable(2);
+        self.chartZoomLevel = ko.observable(1);
         self.NADataArray = [];
         self.SADataArray = [];
         self.europeDataArray = [];
@@ -21,7 +21,7 @@ var RealTimeGraphVM = function () {
         self.africaDataArray = [];
         self.oceaniaDataArray = [];
         self.countryName = ko.observable(null);
-        self.continentClicked = ko.observable("europe");
+        self.continentClicked = ko.observable(null);
         var countryCode = {'BD': 50, 'BE': 56, 'BF': 854, 'BG': 100, 'BA': 70, 'BN': 96, 'JP': 392, 'BI': 108, 'BJ': 204, 'KZ': 398, 'BT': 64, 'JM': 388, 'JO': 400, 'BR': 76, 'BY': 112, 'BZ': 84, 'RU': 643, 'RW': 646, 'RS': 688, 'TL': 626, 'TM': 795, 'TJ': 762, 'RO': 642, 'GW': 624, 'GT': 320, 'GR': 300, 'GQ': 226, 'GY': 328, 'GF': 254, 'GE': 268, 'GB': 826, 'GA': 266, 'GN': 324, 'GM': 270, 'GL': 304, 'GH': 288, 'OM': 512, 'TN': 788, 'IL': 376, 'BW': 72, 'HR': 191, 'HT': 332, 'HU': 348, 'HN': 340, 'PR': 630, 'PT': 620, 'PY': 600, 'PA': 591, 'PG': 598, 'PE': 604, 'PK': 586, 'PH': 608, 'PL': 616, 'ZM': 894, 'EH': 732, 'EE': 233, 'EG': 818, 'ZA': 710, 'EC': 218, 'IT': 380, 'VN': 704, 'SB': 90, 'ET': 231, 'ZW': 716, 'ES': 724, 'ER': 232, 'MG': 450, 'UY': 858, 'UZ': 860, 'MM': 104, 'ML': 466, 'MN': 496, 'US': 840, 'MW': 454, 'MR': 478, 'UG': 800, 'UA': 804, 'MX': 484, 'AT': 40, 'FR': 250, 'MA': 504, 'FI': 246, 'FJ': 242, 'FK': 238, 'NI': 558, 'NL': 528, 'NO': 578, 'NA': 516, 'NC': 540, 'NE': 562, 'NG': 566, 'NZ': 554, 'NP': 524, 'CH': 756, 'CO': 170, 'CN': 156, 'CM': 120, 'CL': 152, 'CA': 124, 'CG': 178, 'CF': 140, 'CZ': 203, 'CY': 196, 'CR': 188, 'CU': 192, 'SZ': 748, 'SY': 760, 'KG': 417, 'KE': 404, 'SR': 740, 'KH': 116, 'SV': 222, 'SK': 703, 'SJ': 744, 'SO': 706, 'SN': 686, 'SL': 694, 'KW': 414, 'SA': 682, 'SE': 752, 'SD': 729, 'DO': 214, 'DJ': 262, 'DK': 208, 'DE': 276, 'YE': 887, 'DZ': 12, 'LB': 422, 'TR': 792, 'LK': 144, 'LV': 428, 'LT': 440, 'LU': 442, 'LR': 430, 'LS': 426, 'TH': 764, 'TG': 768, 'TD': 148, 'AE': 784, 'AF': 4, 'IQ': 368, 'IS': 352, 'AM': 51, 'AL': 8, 'AO': 24, 'AR': 32, 'AU': 36, 'VU': 548, 'IN': 356, 'AZ': 31, 'IE': 372, 'ID': 360, 'MY': 458, 'QA': 634, 'MZ': 508};
         self.countryList = {
             "asia": ['IN', 'JP', 'BD', 'CN', 'ID', 'LK', 'MY', 'TH', 'TW', 'PK', 'PH'],
@@ -235,60 +235,63 @@ var RealTimeGraphVM = function () {
                         self.plotTopTenChannelByDeviceChart();
 
                     } else if (self.chartZoomLevel() == '2') {
-                            self.drawNextLevel();
+
+                        self.drawNextLevel(self.continentClicked());
                     }
                 }, 7 * 1000
             )
         };
 
-        self.drawNextLevel = function(){
+        self.setChartZoomLevel = function (levelNo) {
 
-
-                        if (self.continentClicked() == 'northAmerica') {
-
-                            var naCountryArray = self.getCountryMsgDataArray(self.NADataArray);
-                            self.plotTopCountriesByTotalMsgVolumeChart(naCountryArray);
-                            console.log("naCountryArray ", naCountryArray);
-
-                        } else if (self.continentClicked() == 'asia') {
-
-                            var asiaCountryArray = self.getCountryMsgDataArray(self.asiaDataArray);
-                            self.plotTopCountriesByTotalMsgVolumeChart(asiaCountryArray);
-                            console.log("asiaCountryArray ", asiaCountryArray);
-
-                        } else if (self.continentClicked() == 'southAmerica') {
-
-                            var saCountryArray = self.getCountryMsgDataArray(self.SADataArray);
-                            self.plotTopCountriesByTotalMsgVolumeChart(saCountryArray);
-                            console.log("saCountryArray ", saCountryArray);
-
-                        } else if (self.continentClicked() == 'europe') {
-
-                            var euCountryArray = self.getCountryMsgDataArray(self.europeDataArray);
-                            self.plotTopCountriesByTotalMsgVolumeChart(euCountryArray);
-                            console.log("euCountryArray ", euCountryArray);
-
-                        } else if (self.continentClicked() == 'africa') {
-                            var afCountryArray = self.getCountryMsgDataArray(self.africaDataArray);
-                            self.plotTopCountriesByTotalMsgVolumeChart(afCountryArray);
-                            console.log("afCountryArray ", afCountryArray);
-
-                        } else if (self.continentClicked() == 'oceania') {
-                            var osCountryArray = self.getCountryMsgDataArray(self.oceaniaDataArray);
-                            self.plotTopCountriesByTotalMsgVolumeChart(osCountryArray);
-                            console.log("osCountryArray ", osCountryArray);
-
-                        }
-
-
-
-
-
+            self.chartZoomLevel(levelNo);
         };
 
+        self.drawNextLevel = function (data) {
 
+            self.continentClicked(data);
+            self.chartZoomLevel(2);
+            switch (data) {
 
+                case 'northAmerica':
 
+                    var naCountryArray = self.getCountryMsgDataArray(self.NADataArray);
+                    self.plotTopCountriesByTotalMsgVolumeChart(naCountryArray);
+                    console.log("naCountryArray ", naCountryArray);
+
+                    break;
+                case 'southAmerica':
+
+                    var saCountryArray = self.getCountryMsgDataArray(self.SADataArray);
+                    self.plotTopCountriesByTotalMsgVolumeChart(saCountryArray);
+                    console.log("saCountryArray ", saCountryArray);
+                    break;
+                case 'europe':
+                    var euCountryArray = self.getCountryMsgDataArray(self.europeDataArray);
+                    self.plotTopCountriesByTotalMsgVolumeChart(euCountryArray);
+                    console.log("euCountryArray ", euCountryArray);
+
+                    break;
+                case 'africa':
+
+                    var afCountryArray = self.getCountryMsgDataArray(self.africaDataArray);
+                    self.plotTopCountriesByTotalMsgVolumeChart(afCountryArray);
+                    console.log("afCountryArray ", afCountryArray);
+                    break;
+                case 'asia':
+
+                    var asiaCountryArray = self.getCountryMsgDataArray(self.asiaDataArray);
+                    self.plotTopCountriesByTotalMsgVolumeChart(asiaCountryArray);
+                    console.log("asiaCountryArray ", asiaCountryArray);
+                    break;
+                case 'oceania':
+                    var osCountryArray = self.getCountryMsgDataArray(self.oceaniaDataArray);
+                    self.plotTopCountriesByTotalMsgVolumeChart(osCountryArray);
+                    console.log("osCountryArray ", osCountryArray);
+                    break;
+            }
+
+        };
 
 
         self.createRTSStatsMatrix = function (data) {
@@ -434,42 +437,42 @@ var RealTimeGraphVM = function () {
         };
 
 
-         self.getCountryMsgDataArray = function(countryArray) {
+        self.getCountryMsgDataArray = function (countryArray) {
 
-                        if (countryArray.length > 0) {
+            if (countryArray.length > 0) {
 
-                            var temp = [];
-                            for (var i = 0; i < countryArray.length; i++) {
+                var temp = [];
+                for (var i = 0; i < countryArray.length; i++) {
 
-                                var countryName = countryArray[i].name;
-                                var valueCount = 0;
-                                var tempObj = {};
-                                for (var j = 0; j < countryArray.length; j++) {
+                    var countryName = countryArray[i].name;
+                    var valueCount = 0;
+                    var tempObj = {};
+                    for (var j = 0; j < countryArray.length; j++) {
 
-                                    if (countryName == countryArray[j].name) {
+                        if (countryName == countryArray[j].name) {
 
-                                        valueCount = valueCount + countryArray[j].value;
+                            valueCount = valueCount + countryArray[j].value;
 
-                                    }
+                        }
 
-                                }
-                                tempObj.name = countryName;
-                                tempObj.value = valueCount;
-                                self.allCountry.push(countryName);
-                                temp.push(tempObj);
-                            }
-
-
-                            countryArray = _.uniq(temp, function (country) {
-                                return country.name;
-                            });
-
-
-                        };
-
-                        return countryArray;
                     }
+                    tempObj.name = countryName;
+                    tempObj.value = valueCount;
+                    self.allCountry.push(countryName);
+                    temp.push(tempObj);
+                }
 
+
+                countryArray = _.uniq(temp, function (country) {
+                    return country.name;
+                });
+
+
+            }
+            ;
+
+            return countryArray;
+        }
 
 
         self.plotTopCountriesByTotalMsgVolumeChart = function (msgvolumedata) {

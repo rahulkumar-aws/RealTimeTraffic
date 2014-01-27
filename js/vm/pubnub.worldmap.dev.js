@@ -35,6 +35,7 @@ var WorldMapVM = function () {
 
     self.plotWorldMap = function () {
 
+
         var worldmapWidth = $("#map-wrapper").width();
         var worldMapHeight = $("#map-wrapper").height();
         self.worldmapProperty.worldmapWidth(worldmapWidth);
@@ -44,6 +45,16 @@ var WorldMapVM = function () {
         var height = self.worldmapProperty.worldmapHeight();
 
         var country, state;
+
+        if (typeof(Storage) !== "undefined") {
+
+            localStorage.currentLevel = 1;
+            localStorage.countryId = 0;
+        }
+        else {
+            // Sorry! No web storage support..
+        }
+
 
         self.worldmapProperty.projection = d3.geo.equirectangular().scale(170).translate([ (width / 2 - 90), height / 2]);//.precision(.1);
 
@@ -66,9 +77,16 @@ var WorldMapVM = function () {
                     .neighbors(world.objects.countries.geometries);
 
                 g.append("g").attr("id", "countries").selectAll(
-                        "path").data(countries).enter().append("path").attr("id", function (d, i) {
+                        "path").data(countries).enter().append("path").attr("id",function (d, i) {
                         return d.id;
-                    })//.on("click", country_clicked)
+                    }).on("click", function (d) {
+                        localStorage.currentLevel = 2;
+                        localStorage.countryId = d.id;
+                        var data ={};
+                        data.id= d.id;
+                        data.continentName = "northAmerica";
+                        postbox.notifySubscribers(data.continentName, "levelChange");
+                    })
                     .attr("title", function (d, i) {
                         return d.properties.name;
                     })
@@ -112,6 +130,7 @@ var WorldMapVM = function () {
                 } else {
                     self.worldmapProperty.isZoomed = false;
                     self.worldmapProperty.zoomLevel(1);
+                    postbox.notifySubscribers(1, "resetZoomLevel");
                 }
 
             });
@@ -230,8 +249,7 @@ var WorldMapVM = function () {
 
     };
     self.renderPoint();
-    setInterval(self.renderPoint, 1*1000);
-
+    setInterval(self.renderPoint, 1 * 1000);
 
 
 };

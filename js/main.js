@@ -28,6 +28,7 @@ require([
     "knockout"
 ], function (ko) {
     window.ko = ko;
+    window.postbox = new ko.subscribable();
 });
 
 
@@ -37,4 +38,7 @@ require(["d3", "vm/pubnub.dashboard", "vm/pubnub.worldmap.dev","vm/pubnub.rtsgra
     currentdashboard.realTimeGraphVM.getRealTimeStatsData();
 
     ko.applyBindings(currentdashboard);
+
+    postbox.subscribe(currentdashboard.realTimeGraphVM.drawNextLevel, currentdashboard.realTimeGraphVM, "levelChange");
+    postbox.subscribe(currentdashboard.realTimeGraphVM.setChartZoomLevel, currentdashboard.realTimeGraphVM, "resetZoomLevel");
 })
