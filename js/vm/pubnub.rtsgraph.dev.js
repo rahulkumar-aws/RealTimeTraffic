@@ -74,7 +74,7 @@ var RealTimeGraphVM = function () {
             self.allCountry = [];
             self.totalPubMessage = ko.observable(0);
             self.totalSubMessage = ko.observable(0);
-            $(".tooltip" ).remove();
+            $(".tooltip").remove();
             for (var i = 0; i < currentRTSWorkingData.length; i++) {
 
                 var data = currentRTSWorkingData[i];
@@ -256,7 +256,9 @@ var RealTimeGraphVM = function () {
             var countryMap = {};
             if (key.indexOf('.') != -1) {
 
+                var stateName = key.split('.');
                 countryMap.name = key.split('.')[0];
+                countryMap.stateName = stateName[1]+ " "+stateName[2];
                 countryMap.value = value.p + value.s;
 
                 self.topTenCountryArray.push(countryMap)
@@ -272,7 +274,10 @@ var RealTimeGraphVM = function () {
 
         };
 
+         console.log("State name ",self.topTenCountryArray);
     };
+
+
 
     self.plotTopCountriesByTotalMsgVolumeChart = function (msgvolumedata) {
 
@@ -474,7 +479,7 @@ var RealTimeGraphVM = function () {
         var width = $("#pie-chart").width(), height = $("#pie-chart").height(), radius = Math
             .min(width, height) / 2;
 
-         var div = d3.select("body").append("div")
+        var div = d3.select("body").append("div")
             .attr("class", "tooltip")
             .style("opacity", 0);
 
@@ -500,7 +505,7 @@ var RealTimeGraphVM = function () {
         var g = svg.selectAll(".arc").data(pie(data)).enter().append("g")
             .attr("class", "arc");
 
-        g.append("path").attr("d", arc).style("fill", function (d) {
+        g.append("path").attr("d", arc).style("fill",function (d) {
             return color(d.data.device);
         }).on("mouseover", function (d) {
                 div.transition()
