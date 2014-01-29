@@ -42,21 +42,19 @@ var WorldMapVM = function () {
     };
 
 
-    self.getContinentName = function(id){
+    self.getContinentName = function (id) {
 
-        for(key in self.countryCode){
+        for (key in self.countryCode) {
 
-            if(id == self.countryCode[key]){
+            if (id == self.countryCode[key]) {
 
-                for(code in self.countryList){
+                for (code in self.countryList) {
 
-                    console.log(self.countryList[code])
+                    var continentName = _.indexOf(self.countryList[code], key);
 
-                    var continentName = _.indexOf(self.countryList[code],key);
+                    if (continentName != -1) {
 
-                    if(continentName != -1){
 
-                        alert(code);
                     }
 
                 }
@@ -66,14 +64,9 @@ var WorldMapVM = function () {
         }
 
 
-
     };
 
-
-
-
     self.plotWorldMap = function () {
-
 
         var worldmapWidth = $("#map-wrapper").width();
         var worldMapHeight = $("#map-wrapper").height();

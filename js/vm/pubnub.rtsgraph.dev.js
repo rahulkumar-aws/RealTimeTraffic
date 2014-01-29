@@ -21,6 +21,7 @@ var RealTimeGraphVM = function () {
         self.africaDataArray = [];
         self.oceaniaDataArray = [];
         self.countryName = ko.observable(null);
+
         self.continentClicked = ko.observable(null);
         var countryCode = {'BD': 50, 'BE': 56, 'BF': 854, 'BG': 100, 'BA': 70, 'BN': 96, 'JP': 392, 'BI': 108, 'BJ': 204, 'KZ': 398, 'BT': 64, 'JM': 388, 'JO': 400, 'BR': 76, 'BY': 112, 'BZ': 84, 'RU': 643, 'RW': 646, 'RS': 688, 'TL': 626, 'TM': 795, 'TJ': 762, 'RO': 642, 'GW': 624, 'GT': 320, 'GR': 300, 'GQ': 226, 'GY': 328, 'GF': 254, 'GE': 268, 'GB': 826, 'GA': 266, 'GN': 324, 'GM': 270, 'GL': 304, 'GH': 288, 'OM': 512, 'TN': 788, 'IL': 376, 'BW': 72, 'HR': 191, 'HT': 332, 'HU': 348, 'HN': 340, 'PR': 630, 'PT': 620, 'PY': 600, 'PA': 591, 'PG': 598, 'PE': 604, 'PK': 586, 'PH': 608, 'PL': 616, 'ZM': 894, 'EH': 732, 'EE': 233, 'EG': 818, 'ZA': 710, 'EC': 218, 'IT': 380, 'VN': 704, 'SB': 90, 'ET': 231, 'ZW': 716, 'ES': 724, 'ER': 232, 'MG': 450, 'UY': 858, 'UZ': 860, 'MM': 104, 'ML': 466, 'MN': 496, 'US': 840, 'MW': 454, 'MR': 478, 'UG': 800, 'UA': 804, 'MX': 484, 'AT': 40, 'FR': 250, 'MA': 504, 'FI': 246, 'FJ': 242, 'FK': 238, 'NI': 558, 'NL': 528, 'NO': 578, 'NA': 516, 'NC': 540, 'NE': 562, 'NG': 566, 'NZ': 554, 'NP': 524, 'CH': 756, 'CO': 170, 'CN': 156, 'CM': 120, 'CL': 152, 'CA': 124, 'CG': 178, 'CF': 140, 'CZ': 203, 'CY': 196, 'CR': 188, 'CU': 192, 'SZ': 748, 'SY': 760, 'KG': 417, 'KE': 404, 'SR': 740, 'KH': 116, 'SV': 222, 'SK': 703, 'SJ': 744, 'SO': 706, 'SN': 686, 'SL': 694, 'KW': 414, 'SA': 682, 'SE': 752, 'SD': 729, 'DO': 214, 'DJ': 262, 'DK': 208, 'DE': 276, 'YE': 887, 'DZ': 12, 'LB': 422, 'TR': 792, 'LK': 144, 'LV': 428, 'LT': 440, 'LU': 442, 'LR': 430, 'LS': 426, 'TH': 764, 'TG': 768, 'TD': 148, 'AE': 784, 'AF': 4, 'IQ': 368, 'IS': 352, 'AM': 51, 'AL': 8, 'AO': 24, 'AR': 32, 'AU': 36, 'VU': 548, 'IN': 356, 'AZ': 31, 'IE': 372, 'ID': 360, 'MY': 458, 'QA': 634, 'MZ': 508};
         self.countryList = {
@@ -33,21 +34,22 @@ var RealTimeGraphVM = function () {
         };
 
         //End
+        self.allChannelArray = [];
         self.topTenCountryArray = [];
+        self.topTenChannelArray = [];
         self.topTenCountryData = [];
         self.topTenCountryByDevice = [];
         self.deviceinfo = [];
         self.allDevices = [];
         self.allCountry = [];
+        self.allChannel = [];
+        self.channelArray = [];
         self.usedDeviceData = [];
         self.totalPubMessage = ko.observable(0);
         self.totalSubMessage = ko.observable(0);
         self.pPerSecond = ko.observable(0);
         self.sPerSecond = ko.observable(0);
-
-
         self.getRealTimeStatsData = function () {
-
             var pubnub = PUBNUB.init({
                 subscribe_key: 'e19f2bb0-623a-11df-98a1-fbd39d75aa3f',
                 publish_key: 'ea1afbc1-70a3-43c1-990c-ede5cf65a542',
@@ -61,11 +63,8 @@ var RealTimeGraphVM = function () {
                     'e19f2bb0-623a-11df-98a1-fbd39d75aa3f'
                 ]
             }
-
             pubnub.publish({ 'channel': 'real-time-stats', 'message': message });
-
             pubnub.subscribe({'channel': 'real-time-stats', 'message': displayMsg});
-
             function displayMsg(msg) {
 
                 self.streamDataArray.push(msg);
@@ -78,7 +77,6 @@ var RealTimeGraphVM = function () {
                 self.streamDataArray = [];
 
             }, 5 * 1000);
-
             setInterval(function () {
 
                     var currentRTSWorkingData = self.workingQueue.shift();
@@ -90,7 +88,9 @@ var RealTimeGraphVM = function () {
                         self.rtsStatsMessages.totalMessages(0),
                         self.rtsStatsMessages.totalHistoryMessages(0),
                         self.rtsStatsMessages.totalHistoryRequest(0);
+                    self.allChannelArray = [];
                     self.topTenCountryArray = [];
+                    self.topTenChannelArray = [];
                     self.allCountry = [];
                     self.NADataArray = [];
                     self.SADataArray = [];
@@ -98,6 +98,7 @@ var RealTimeGraphVM = function () {
                     self.asiaDataArray = [];
                     self.africaDataArray = [];
                     self.oceaniaDataArray = [];
+                    self.channelArray = [];
                     self.totalPubMessage = ko.observable(0);
                     self.totalSubMessage = ko.observable(0);
                     $(".tooltip").remove();
@@ -141,7 +142,7 @@ var RealTimeGraphVM = function () {
 
 
                     //Device Chart Logic
-                    var devicearray = ["Chrome", "curl", "Android", "AndroidTab", "PC", "iOS", "Mac OS", "iPad"];
+                    var devicearray = ["curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36", "Python-urllib/2.7"];
                     var testDevice = [];
                     for (var i = 0; i < devicearray.length; i++) {
 
@@ -155,8 +156,8 @@ var RealTimeGraphVM = function () {
 
                             $.each(currentdevice, function (k, v) {
                                 if (k.indexOf(matcher) != -1) {
-                                    tempObj.name = matcher;
-                                    tempObj.value = v;
+                                    tempObj.name = k;
+                                    tempObj.value = v.p + v.s;
                                     testDevice.push(tempObj);
                                 }
                             });
@@ -226,7 +227,34 @@ var RealTimeGraphVM = function () {
                     self.topTenCountryByDevice.reverse();
 
 
+                    //Top 10 Channel
+
+                    console.log("self.allChannelArray ", self.allChannelArray);
+
+                    var finalArray = [];
+                    for (var i = 0; i < self.allChannelArray.length; i++) {
+                        var currentChannel = self.allChannelArray[i].name;
+                        var valueCount = 0;
+                        var channelMap = {};
+                        for (var j = 0; j < self.allChannelArray.length; j++) {
+                            if (currentChannel == self.allChannelArray[j].name) {
+                                valueCount = valueCount + self.allChannelArray[j].value;
+                            }
+                        }
+                        channelMap.channel = currentChannel;
+                        channelMap.used = valueCount;
+                        self.allChannel.push(valueCount);
+                        finalArray.push(channelMap);
+                    }
+
+                    self.topTenChannelArray = _.uniq(finalArray, function (channel) {
+                        return channel.channel;
+                    });
+
+
                     if (self.chartZoomLevel() == '1') {
+
+                        console.log("Unoque array ", self.topTenChannelArray);
 
                         self.plotTopCountriesByTotalMsgVolumeChart(self.topTenCountryData);
                         self.plotTopCountriesByDeviceChart(self.topTenCountryByDevice);
@@ -257,56 +285,48 @@ var RealTimeGraphVM = function () {
 
                     var naCountryArray = self.getCountryMsgDataArray(self.NADataArray);
                     self.plotTopCountriesByTotalMsgVolumeChart(naCountryArray);
-                    console.log("naCountryArray ", naCountryArray);
 
                     break;
                 case 'southAmerica':
 
                     var saCountryArray = self.getCountryMsgDataArray(self.SADataArray);
                     self.plotTopCountriesByTotalMsgVolumeChart(saCountryArray);
-                    console.log("saCountryArray ", saCountryArray);
                     break;
                 case 'europe':
                     var euCountryArray = self.getCountryMsgDataArray(self.europeDataArray);
                     self.plotTopCountriesByTotalMsgVolumeChart(euCountryArray);
-                    console.log("euCountryArray ", euCountryArray);
-
                     break;
                 case 'africa':
 
                     var afCountryArray = self.getCountryMsgDataArray(self.africaDataArray);
                     self.plotTopCountriesByTotalMsgVolumeChart(afCountryArray);
-                    console.log("afCountryArray ", afCountryArray);
                     break;
                 case 'asia':
 
                     var asiaCountryArray = self.getCountryMsgDataArray(self.asiaDataArray);
                     self.plotTopCountriesByTotalMsgVolumeChart(asiaCountryArray);
-                    console.log("asiaCountryArray ", asiaCountryArray);
                     break;
                 case 'oceania':
                     var osCountryArray = self.getCountryMsgDataArray(self.oceaniaDataArray);
                     self.plotTopCountriesByTotalMsgVolumeChart(osCountryArray);
-                    console.log("osCountryArray ", osCountryArray);
                     break;
             }
 
         };
 
+        self.traverse = function (o, func) {
+            for (var i in o) {
+                func.apply(this, [i, o[i]]);
+                if (o[i] !== null && typeof(o[i]) == "object") {
+                    //going on step down in the object tree!!
+                    self.traverse(o[i], func);
+                }
+            }
+        };
 
         self.createRTSStatsMatrix = function (data) {
+            self.traverse(data, process);
 
-            traverse(data, process);
-
-            function traverse(o, func) {
-                for (var i in o) {
-                    func.apply(this, [i, o[i]]);
-                    if (o[i] !== null && typeof(o[i]) == "object") {
-                        //going on step down in the object tree!!
-                        traverse(o[i], func);
-                    }
-                }
-            };
 
             function process(key, value) {
 
@@ -340,7 +360,8 @@ var RealTimeGraphVM = function () {
                 }
 
                 if (key.indexOf('geo') != -1) {
-                    traverse(value, geoProcess);
+
+                    self.traverse(value, geoProcess);
                 }
 
                 if (key == 'unique_user_agents') {
@@ -348,7 +369,31 @@ var RealTimeGraphVM = function () {
                     self.deviceinfo.push(value);
                 }
 
+                if (key == "unique_channels") {
+
+                    self.traverse(value, channelProgress);
+                    self.channelArray.push(value);
+
+                }
+
             };
+
+
+            function channelProgress(key, value) {
+
+                var channelMap = {};
+                var channelName = null;
+
+                if (key.length > 1) {
+                    self.channelName = key;
+                    channelMap.name = self.channelName;
+                    channelMap.value = value.p + value.s;
+                    self.allChannelArray.push(channelMap);
+                }
+
+            };
+
+
             function geoProcess(key, value) {
                 var countryMap = {};
                 var stateName = null;
@@ -416,10 +461,7 @@ var RealTimeGraphVM = function () {
                             }
                         }
                     }
-
-
                 }
-
                 if (key == 'p') {
                     self.totalPubMessage(self.totalPubMessage() + value);
                 }
@@ -427,15 +469,9 @@ var RealTimeGraphVM = function () {
                     self.totalSubMessage(self.totalSubMessage() + value);
                 }
 
-
             };
 
-
-            console.log("Country found ", self.NADataArray, self.asiaDataArray, self.europeDataArray);
-
-            //console.log("State name ", self.topTenCountryArray);
         };
-
 
         self.getCountryMsgDataArray = function (countryArray) {
 
@@ -483,7 +519,6 @@ var RealTimeGraphVM = function () {
             }
 
             $("#top-ten-countries-message-div").html(" ");
-
 
             var wi = $("#top-ten-countries-message-div").width();
             var hi = $("#top-ten-countries-message-div").height();
@@ -664,13 +699,9 @@ var RealTimeGraphVM = function () {
                         .duration(200)
                         .style("opacity", 0);
                 });
-
-
         };
         self.plotTopDeviceChart = function (deviceData) {
-
             $("#pie-chart").html(" ");
-
 
             var width = $("#pie-chart").width(), height = $("#pie-chart").height(), radius = Math
                 .min(width, height) / 2;
@@ -707,7 +738,7 @@ var RealTimeGraphVM = function () {
                     div.transition()
                         .duration(200)
                         .style("opacity", .9);
-                    div.html(d.data.used + "<br/>")
+                    div.html(d.data.device + "<br/>Used : " + d.data.used + "<br/>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
                 })
@@ -721,12 +752,13 @@ var RealTimeGraphVM = function () {
                 return "translate(" + arc.centroid(d) + ")";
             }).attr("dy", ".45em").style("text-anchor", "middle").text(
                 function (d) {
-                    return d.data.device;
+                    //return d.data.device;
                 });
         };
 
 
         self.plotTopTenChannelChart = function () {
+
 
             $("#top-ten-channel-by-message-div").html(" ");
 
@@ -802,8 +834,6 @@ var RealTimeGraphVM = function () {
 
             //top-ten-channel-by-device-div
             $("#top-ten-channel-by-device-div").html(" ");
-
-
             var width = $("#top-ten-channel-by-device-div").width();
             var height = $("#top-ten-channel-by-device-div").height();
             var margin = { "top": 30, "right": 20, "bottom": 20, "left": 30 }, width = width - margin.left - margin.right, height = height
@@ -833,7 +863,6 @@ var RealTimeGraphVM = function () {
                 data.sort(function (a, b) {
                     return b.totalMessageVolume - a.totalMessageVolume;
                 });
-
                 // Set the scale domain.
                 x.domain([ 0, d3.max(data, function (d) {
                     return d.totalMessageVolume;
@@ -842,12 +871,10 @@ var RealTimeGraphVM = function () {
 
                     return d.channelName;
                 }));
-
                 var bar = svg.selectAll("g.bar").data(data).enter().append("g")
                     .attr("class", "bar").attr("transform", function (d) {
                         return "translate(0," + y(d.channelName) + ")";
                     });
-
                 bar.append("rect").attr("width",function (d) {
                     return x(d.totalMessageVolume);
                 }).attr("height", y.rangeBand()).on("mouseover", function (d) {
@@ -864,7 +891,6 @@ var RealTimeGraphVM = function () {
                             .style("opacity", 0);
                     });
                 svg.append("g").attr("class", "x axis").call(xAxis);
-
                 svg.append("g").attr("class", "y axis").call(yAxis);
             });
 
