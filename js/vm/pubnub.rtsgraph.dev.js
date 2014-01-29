@@ -259,7 +259,7 @@ var RealTimeGraphVM = function () {
                         self.plotTopCountriesByTotalMsgVolumeChart(self.topTenCountryData);
                         self.plotTopCountriesByDeviceChart(self.topTenCountryByDevice);
                         self.plotTopDeviceChart(self.usedDeviceData);
-                        self.plotTopTenChannelChart();
+                        self.plotTopTenChannelChart(self.topTenChannelArray);
                         self.plotTopTenChannelByDeviceChart();
 
                     } else if (self.chartZoomLevel() == '2') {
@@ -757,7 +757,7 @@ var RealTimeGraphVM = function () {
         };
 
 
-        self.plotTopTenChannelChart = function () {
+        self.plotTopTenChannelChart = function (channelData) {
 
 
             $("#top-ten-channel-by-message-div").html(" ");
@@ -782,51 +782,41 @@ var RealTimeGraphVM = function () {
                 .attr("class", "tooltip")
                 .style("opacity", 0);
 
-            d3.csv("./data/TopTenChannel.csv", function (data) {
+            var data = self.topTenChannelArray;
 
-                // Parse numbers, and sort by value.
-                data.forEach(function (d) {
-                    d.totalMessageVolume = +d.totalMessageVolume;
+            x.domain([ 0, d3.max(data, function (d) {
+                return d.used;
+            }) ]);
+            y.domain(data.map(function (d) {
+
+                return d.channel;
+            }));
+
+            var bar = svg.selectAll("g.bar").data(data).enter().append("g")
+                .attr("class", "bar").attr("transform", function (d) {
+                    return "translate(0," + y(d.channel) + ")";
                 });
-                data.sort(function (a, b) {
-                    return b.totalMessageVolume - a.totalMessageVolume;
+
+            bar.append("rect").attr("width",function (d) {
+                return x(d.used);
+            }).attr("height", y.rangeBand())
+                .on("mouseover", function (d) {
+                    div.transition()
+                        .duration(200)
+                        .style("opacity", .9);
+                    div.html(d.used + "<br/>")
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px");
+                })
+                .on("mouseout", function (d) {
+                    div.transition()
+                        .duration(200)
+                        .style("opacity", 0);
                 });
 
-                // Set the scale domain.
-                x.domain([ 0, d3.max(data, function (d) {
-                    return d.totalMessageVolume;
-                }) ]);
-                y.domain(data.map(function (d) {
+            svg.append("g").attr("class", "x axis").call(xAxis);
 
-                    return d.channelName;
-                }));
-
-                var bar = svg.selectAll("g.bar").data(data).enter().append("g")
-                    .attr("class", "bar").attr("transform", function (d) {
-                        return "translate(0," + y(d.channelName) + ")";
-                    });
-
-                bar.append("rect").attr("width",function (d) {
-                    return x(d.totalMessageVolume);
-                }).attr("height", y.rangeBand())
-                    .on("mouseover", function (d) {
-                        div.transition()
-                            .duration(200)
-                            .style("opacity", .9);
-                        div.html(d.totalMessageVolume + "<br/>")
-                            .style("left", (d3.event.pageX) + "px")
-                            .style("top", (d3.event.pageY - 28) + "px");
-                    })
-                    .on("mouseout", function (d) {
-                        div.transition()
-                            .duration(200)
-                            .style("opacity", 0);
-                    });
-
-                svg.append("g").attr("class", "x axis").call(xAxis);
-
-                svg.append("g").attr("class", "y axis").call(yAxis);
-            });
+            svg.append("g").attr("class", "y axis").call(yAxis);
 
         };
 
