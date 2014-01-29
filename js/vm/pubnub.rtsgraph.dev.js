@@ -157,7 +157,9 @@ var RealTimeGraphVM = function () {
                             $.each(currentdevice, function (k, v) {
                                 if (k.indexOf(matcher) != -1) {
                                     tempObj.name = k;
+                                     console.log(" v.p ",v.p," ","v.s ",v.s);
                                     tempObj.value = v.p + v.s;
+
                                     testDevice.push(tempObj);
                                 }
                             });
@@ -170,6 +172,14 @@ var RealTimeGraphVM = function () {
                         var deviceMap = {};
                         for (var j = 0; j < testDevice.length; j++) {
                             if (currentDevice == testDevice[j].name) {
+
+
+                               // console.log("** testDevice[j].value ", testDevice[j].value);
+
+                                if(testDevice[j].value == undefined ){
+                                    testDevice[j].value = 0;
+                                }
+
                                 valueCount = valueCount + testDevice[j].value;
                             }
                         }
@@ -187,11 +197,13 @@ var RealTimeGraphVM = function () {
                     var noOfdevice = [];
                     for (var i = 0; i < self.allCountry.length; i++) {
                         var a = {};
+                       // console.log("self.allDevices[i] ",self.allDevices[i]);
+
                         a.country = self.allCountry[i];
                         a.noOfdevice = self.allDevices[i];
                         noOfdevice.push(a);
                     }
-                    var temp = [];
+                    var tempDeviceArray = [];
                     for (var i = 0; i < noOfdevice.length; i++) {
 
                         var countryName = noOfdevice[i].country;
@@ -209,10 +221,13 @@ var RealTimeGraphVM = function () {
                         aa.name = countryName;
                         aa.value = deviceCount;
 
-                        temp.push(aa);
+                        tempDeviceArray.push(aa);
                     }
 
-                    self.topTenCountryByDevice = _.uniq(temp, function (country) {
+                    console.log("tempDeviceArray ",tempDeviceArray);
+
+
+                    self.topTenCountryByDevice = _.uniq(tempDeviceArray, function (country) {
                         return country.name;
                     });
 
@@ -221,6 +236,7 @@ var RealTimeGraphVM = function () {
                         return data.value;
                     });
                     self.topTenCountryData.reverse();
+
                     self.topTenCountryByDevice = _.sortBy(self.topTenCountryByDevice, function (data) {
                         return data.value;
                     });
@@ -228,8 +244,6 @@ var RealTimeGraphVM = function () {
 
 
                     //Top 10 Channel
-
-                    console.log("self.allChannelArray ", self.allChannelArray);
 
                     var finalArray = [];
                     for (var i = 0; i < self.allChannelArray.length; i++) {
@@ -253,8 +267,6 @@ var RealTimeGraphVM = function () {
 
 
                     if (self.chartZoomLevel() == '1') {
-
-                        console.log("Unoque array ", self.topTenChannelArray);
 
                         self.plotTopCountriesByTotalMsgVolumeChart(self.topTenCountryData);
                         self.plotTopCountriesByDeviceChart(self.topTenCountryByDevice);
@@ -326,7 +338,6 @@ var RealTimeGraphVM = function () {
 
         self.createRTSStatsMatrix = function (data) {
             self.traverse(data, process);
-
 
             function process(key, value) {
 
@@ -619,6 +630,9 @@ var RealTimeGraphVM = function () {
         self.plotNetworkTrafficGraph();
 
         self.plotTopCountriesByDeviceChart = function (deviceData) {
+
+
+            ///console.log("deviceData  ",deviceData)
 
 
             $("#top-ten-countries-device-div").html(" ");

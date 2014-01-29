@@ -116,11 +116,37 @@ var WorldMapVM = function () {
                         localStorage.countryId = d.id;
                         var data = {};
                         data.id = d.id;
-
+                        var continentName = null;
 
                         self.getContinentName(d.id);
 
-                        data.continentName = "northAmerica";
+                        //alert(d.id);
+
+                        for(var code in self.countryCode){
+
+                            if(d.id== self.countryCode[code]){
+
+                                var currentCountryCode = code;
+
+                                for(var c in self.countryList){
+
+                                    var currentCountryArray = self.countryList[c];
+
+                                    if(_.indexOf(currentCountryArray, currentCountryCode)!= -1){
+
+                                        continentName = c;
+
+                                    }
+
+                                }
+
+
+                            }
+                        }
+
+
+
+                        data.continentName = continentName;
                         postbox.notifySubscribers(data.continentName, "levelChange");
                     })
                     .attr("title", function (d, i) {
