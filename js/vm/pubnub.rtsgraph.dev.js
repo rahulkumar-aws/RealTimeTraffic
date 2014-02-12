@@ -123,14 +123,11 @@ var RealTimeGraphVM = function () {
 
                                 if (countryName == self.topTenCountryArray[j].name) {
 
-
-                                    //console.log("RTRTRTR ", self.topTenCountryArray[j].deviceinfo);
-
                                     for(var k in self.topTenCountryArray[j].deviceinfo){
 
-                                       deviceCount = self.topTenCountryArray[j].deviceinfo[k].p + self.topTenCountryArray[j].deviceinfo[k].s;
+                                        //console.log("RTRTRTR**", self.topTenCountryArray[j].deviceinfo[k].p," ",self.topTenCountryArray[j].deviceinfo[k].s);
 
-
+                                       deviceCount = deviceCount + self.topTenCountryArray[j].deviceinfo[k].p + self.topTenCountryArray[j].deviceinfo[k].s;
 
                                     }
 
