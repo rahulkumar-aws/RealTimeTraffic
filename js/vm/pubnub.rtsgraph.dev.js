@@ -175,7 +175,7 @@ var RealTimeGraphVM = function () {
 
 
                     //Device Chart Logic
-                    var devicearray = ["Chrome", "Other"];
+                    var devicearray = ["Chrome", "Other","Chromium"];
                     var testDevice = [];
                     for (var i = 0; i < devicearray.length; i++) {
 
