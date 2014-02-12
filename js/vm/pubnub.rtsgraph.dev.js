@@ -108,6 +108,8 @@ var RealTimeGraphVM = function () {
                         self.createRTSStatsMatrix(data);
                     }
 
+
+
                     if (self.topTenCountryArray.length > 0) {
 
                         var temp = [];
@@ -115,10 +117,22 @@ var RealTimeGraphVM = function () {
 
                             var countryName = self.topTenCountryArray[i].name;
                             var valueCount = 0;
+                            var deviceCount =0;
                             var tempObj = {};
                             for (var j = 0; j < self.topTenCountryArray.length; j++) {
 
                                 if (countryName == self.topTenCountryArray[j].name) {
+
+
+                                    //console.log("RTRTRTR ", self.topTenCountryArray[j].deviceinfo);
+
+                                    for(var k in self.topTenCountryArray[j].deviceinfo){
+
+                                       deviceCount = self.topTenCountryArray[j].deviceinfo[k].p + self.topTenCountryArray[j].deviceinfo[k].s;
+
+
+
+                                    }
 
                                     valueCount = valueCount + self.topTenCountryArray[j].value;
 
@@ -127,6 +141,7 @@ var RealTimeGraphVM = function () {
                             }
                             tempObj.name = countryName;
                             tempObj.value = valueCount;
+                            tempObj.totalDeviceVolume=deviceCount;
                             self.allCountry.push(countryName);
                             temp.push(tempObj);
                         }
@@ -137,12 +152,30 @@ var RealTimeGraphVM = function () {
                         });
 
 
-                    }
-                    ;
+                    };
+
+
+
+                    //Top 10 country by device connection
+
+                   //console.log("Top 10 Country Array ",self.topTenCountryArray);
+
+
+              /*      for(var i=0; i< self.topTenCountryArray.length;i++){
+
+
+                               console.log(self.topTenCountryArray[i].deviceinfo);
+
+
+                    }*/
+
+
+
+
 
 
                     //Device Chart Logic
-                    var devicearray = ["curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.76 Safari/537.36", "Python-urllib/2.7"];
+                    var devicearray = ["Chrome", "Other"];
                     var testDevice = [];
                     for (var i = 0; i < devicearray.length; i++) {
 
@@ -224,9 +257,6 @@ var RealTimeGraphVM = function () {
                         tempDeviceArray.push(aa);
                     }
 
-                    console.log("tempDeviceArray ",tempDeviceArray);
-
-
                     self.topTenCountryByDevice = _.uniq(tempDeviceArray, function (country) {
                         return country.name;
                     });
@@ -269,7 +299,8 @@ var RealTimeGraphVM = function () {
                     if (self.chartZoomLevel() == '1') {
 
                         self.plotTopCountriesByTotalMsgVolumeChart(self.topTenCountryData);
-                        self.plotTopCountriesByDeviceChart(self.topTenCountryByDevice);
+                       // self.plotTopCountriesByDeviceChart(self.topTenCountryByDevice);
+                        self.plotTopCountriesByDeviceChart(self.topTenCountryData);
                         self.plotTopDeviceChart(self.usedDeviceData);
                         self.plotTopTenChannelChart(self.topTenChannelArray);
                         self.plotTopTenChannelByDeviceChart();
@@ -339,7 +370,8 @@ var RealTimeGraphVM = function () {
         self.createRTSStatsMatrix = function (data) {
             self.traverse(data, process);
 
-            function process(key, value) {
+
+                function process(key, value) {
 
                 //Total No of Channel (sum of all n_unique_channels)
                 if (key == 'n_unique_channels') {
@@ -405,10 +437,31 @@ var RealTimeGraphVM = function () {
             };
 
 
+            function userAgentProcess(key, value) {
+
+
+
+
+            }
+
+
             function geoProcess(key, value) {
                 var countryMap = {};
                 var stateName = null;
                 self.countryName(null);
+
+
+
+               /*     if(key=="user_agents"){
+
+
+                        console.log("UIUIUIUI ",value);
+
+
+                    }*/
+
+
+
                 if (key.indexOf('.') != -1) {
 
                     stateName = key.split('.');
@@ -416,8 +469,9 @@ var RealTimeGraphVM = function () {
                     countryMap.name = self.countryName();
                     countryMap.stateName = stateName[1] + " " + stateName[2];
                     countryMap.value = value.p + value.s;
-                    self.topTenCountryArray.push(countryMap)
-
+                    countryMap.deviceinfo = value.user_agents;
+                    countryMap.channelsinfo = value.channels;
+                    self.topTenCountryArray.push(countryMap);
 
                     var countryFound = null;
                     for (var key in self.countryList) {
@@ -632,13 +686,13 @@ var RealTimeGraphVM = function () {
         self.plotTopCountriesByDeviceChart = function (deviceData) {
 
 
-            ///console.log("deviceData  ",deviceData)
+            console.log("deviceData  ",deviceData)
 
 
             $("#top-ten-countries-device-div").html(" ");
 
             function type(d) {
-                d.value = +d.value;
+                d.totalDeviceVolume = +d.totalDeviceVolume;
                 return d;
             }
 
@@ -676,7 +730,7 @@ var RealTimeGraphVM = function () {
 
             y.domain([ 0, d3.max(data, function (d) {
 
-                return d.value;
+                return d.totalDeviceVolume;
             })]);
 
             svg.append("g").attr("class", "x axis").attr("transform",
@@ -697,14 +751,14 @@ var RealTimeGraphVM = function () {
                     "class", "bar").attr("x",function (d) {
                     return x(d.name);
                 }).attr("width", x.rangeBand()).attr("y",function (d) {
-                    return y(d.value);
+                    return y(d.totalDeviceVolume);
                 }).attr("height",function (d) {
-                    return height - y(d.value);
+                    return height - y(d.totalDeviceVolume);
                 }).on("mouseover", function (d) {
                     div.transition()
                         .duration(200)
                         .style("opacity", .9);
-                    div.html(d.value + "<br/>")
+                    div.html(d.totalDeviceVolume + "<br/>")
                         .style("left", (d3.event.pageX) + "px")
                         .style("top", (d3.event.pageY - 28) + "px");
                 })
