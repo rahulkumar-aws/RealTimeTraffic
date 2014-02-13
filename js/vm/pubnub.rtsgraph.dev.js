@@ -427,14 +427,6 @@ var RealTimeGraphVM = function () {
             };
 
 
-            function userAgentProcess(key, value) {
-
-
-
-
-            }
-
-
             function geoProcess(key, value) {
                 var countryMap = {};
                 var stateName = null;
